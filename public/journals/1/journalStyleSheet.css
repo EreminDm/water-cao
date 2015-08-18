@@ -47,8 +47,6 @@
 
 #headerTitle h1{
 	padding-top: 5%;
-	width: 925px;
-
 }
 #headerTitle h1 img {
     color: #ffffff;
@@ -355,10 +353,8 @@ html body {
 	}
 	
 	#headerTitle h1{
-		
     	margin: 0;
     	padding: 0;
-		width:600px;
 		background: url(http://water-ca.org/ej/public/journals/mobileHeader_en.png) no-repeat;
 		height: 50px;
 		background-size: 24%;
@@ -411,5 +407,11 @@ html body {
 		margin-top: -25px;
 		width: 925px;
 		padding-top: 3%;
+	}
+	#headerTitle h1{
+		width: 925px;
+	}
+	#body {
+		width: 950px;
 	}
 }
