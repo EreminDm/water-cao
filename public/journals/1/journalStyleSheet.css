@@ -1,0 +1,415 @@
+
+#about {
+    padding: 8.875px;
+}
+
+#about a {
+    font-family: Georgia;
+}
+
+#additionalHomeContent img {
+    height: 70px;    
+    width: 70px;
+}
+
+#additionalHomeContent p {
+	margin-left: -100px;
+    padding-top: 30px;
+    width: 925px;
+}
+
+#content {
+    background-color: none;
+    border-color: #9940ff;
+    margin-bottom: 19px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 19px;
+    text-align: left ;
+}
+
+#content ol {
+    line-height: 1.6em;
+    padding-bottom: 15px;
+}
+
+#content p {
+    line-height: 1.6em;
+}
+
+#current {
+    padding: 8.875px;
+}
+
+#header {
+    height: auto;
+}
+
+#headerTitle h1{
+	padding-top: 5%;
+	width: 925px;
+
+}
+#headerTitle h1 img {
+    color: #ffffff;
+    height: 80px;
+    width: 700px;
+	background-color: none;
+	padding-left: 12%;
+	}
+
+#home {
+    padding: 8.875px;
+}
+
+#home a {
+    font-size: 15px;
+}
+
+#journalDescription {
+    height: 80px;   
+    width: 100%;
+}
+
+#journalDescription em strong {
+    color: #000000;
+    text-transform: none;
+}
+
+#login {
+    padding: 8.875px;
+}
+
+#navbar {
+    background-color: #23A3D2;
+    font-family: Georgia;
+    padding: 5px;
+	font-size: 88%;
+    width: 101%;
+}
+
+#navbar a {
+    color: white;
+}
+
+#navbar ul li:active {
+    color: #F5F5F5;
+}
+
+#navbar ul li:active a {
+    color: #F5F5F5;
+}
+
+a:hover {
+    background: white;
+}
+
+#navbar ul li:hover {
+    background-color: #F5F5F5;
+}
+
+#navbar ul li:hover a {
+    background-color: #F5F5F5;
+    color: black;
+}
+
+#onlineSubmissions p {
+    margin-botom: 10px;
+    margin-top: 1px;
+}
+
+#principalContact {
+    text-align: center ;
+}
+
+#register {
+    line-height: 40px;
+}
+
+#register h3 {
+    padding-top: 0;
+}
+
+#register p {
+    padding-bottom: 0;
+    width: 630px;
+}
+
+#results {
+    font-size: 14px;
+}
+
+#rightSidebar {
+    margin-left: 874px;
+    margin-top: -120px;
+    position: absolute;
+}
+
+#search {
+    padding: 8.875px;
+}
+
+#searchForm {
+    font-size: 14px;
+}
+
+#signinForm {
+    text-align: left ;
+}
+
+.data {
+    text-align: left ;
+}
+
+a.icon img {
+    border-color: #dee4ff;
+    border-style: solid;
+    font-variant: normal;
+    text-decoration: underline;
+    text-transform: none;
+}
+
+@font-face {
+  
+  font-family: 'Georgia';
+  
+  font-style: normal;
+  
+  font-weight: 400;
+  src: local('Georgia'), url(http://fonts.gstatic.com/l/font?kit=icWX53l1ZgJxqcY5jyCx2w) format('woff2');
+}
+
+body {
+    background-image: none ;
+}
+
+/*@import url(http://fonts.googleapis.com/css?family=Georgia);*/
+
+div.block {
+    background-color: none;
+    border-color: #3b25b8;
+    color: #fcfcfc;
+    padding: 0px;
+    width: 40%;
+	margin-left: -9px;
+	padding-top: 30%;
+}
+
+div.block img {
+    border-color: #dee4ff;
+    border-style: solid;
+    border-width: 3px;
+    height: 20px;
+    margin: 12px;
+    margin-top: 1px;
+    width: 35px;
+}
+
+input.button {
+    background: #23A3D2;
+    color: white;
+    font-size: 1.1em;
+}
+
+input.button.defaultButton {
+    background-color: 23A3D2;
+    color: white;
+    font-weight: normal;
+}
+
+input.textField {
+    background: white;
+    float: left;
+    margin-right: 10px;
+}
+
+select.selectMenu {
+    float: left;
+    margin-right: 10px;
+}
+
+span.instruct {
+    float: left;
+    line-height: 1.6em;
+}
+
+span.pkp_form_error {
+    font-size: 22px;
+}
+
+td.formSubLabel h4 {
+    font-size: 18px;
+}
+
+td.instruct {
+    float: left;
+    line-height: 1.6em;
+}
+
+td.label {
+    line-height: 1.6em;
+}
+
+td.label h4 {
+    font-size: 18px;
+}
+
+td.value {
+    float: left;
+    line-height: 1.6em;
+    padding-bottom: 15px;
+}
+
+#additionalHomeContent a:hover {
+    background-color: white;
+    color: black;
+}
+
+#userHome {
+    padding: 8.875px;
+}
+
+#content {
+    left: 10%;
+    position: relative;
+    text-align: center;
+    width: 750px;
+}
+
+tr td p {
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: left;
+}
+
+table {
+    border-color: #d966d9;
+    width: 800px;
+}
+
+tbody tr td {
+    border-bottom-width: 0;
+    border-color: #e8e5ff;
+    border-left-width: 1pxpxpxpx;
+    border-right-width: 1pxpxpxpx;
+    border-style: solid;
+    border-top-width: 0;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#content p {
+    text-align: center;
+}
+
+#additionalHomeContent div p {
+    margin-left: -100px;
+    width: 925px;
+}
+
+#content ol li {
+    text-align: left;
+    width: 120%;
+}
+
+#additionalHomeContent p a{
+	margin-right: 65%;
+}
+
+#issueCoverImage a img {
+	position: relative;
+	left: 23%;
+	border-style: solid;
+	border-color: #0d0b0d;
+	padding-top: 10px;
+	border-width: 3px;
+	background-color: #ffffff;
+}
+
+html {
+    background: linear-gradient(to top, #D3D3D3,#D3D3D3,#87CEFA, #87CEFA,#D3D3D3);
+    height: 200%;
+}
+
+html body {
+    background: url(http://water-ca.org/ej/public/journals/header2.png)repeat-x;
+    height: 100%;
+}
+
+@media (max-device-width: 320px) {
+	html {
+		background: none;
+		width: 100%;
+	}
+	#pkp-common-openJournalSystems {
+		width:100%;
+	}
+	
+	html body { 
+		background:none;
+	}
+	#container{
+		width: 100% !important;
+		min-width: 100% !important;
+	}
+	
+	#headerTitle h1{
+		
+    	margin: 0;
+    	padding: 0;
+		width:600px;
+		background: url(http://water-ca.org/ej/public/journals/mobileHeader_en.png) no-repeat;
+		height: 50px;
+		background-size: 24%;
+		
+	}
+	
+	#headerTitle h1 img {
+		
+    	color: #ffffff;
+    	height: 8.6486%;
+    	width: 37.8378%;
+		background-color: none;
+		padding-left: 0%;
+		background: none;
+		display: none;
+	}
+	
+
+	#navbar{
+		width: 500px;
+	}
+	
+	#content {
+		width: 500px;	
+	}
+	
+	ul.menu {
+		width:100%;
+	}
+	#journalDescription {
+		width:90%;	
+	}
+	#additionalHomeContent {
+		width: 90%;
+	}
+	#additionalHomeContent div p {
+		width:100%	
+	}
+	#additionalHomeContent p {
+		width: 100%;
+	}
+	
+}
+@media (min-device-width: 1024px ) {
+	
+	#additionalHomeContent a p {
+		width: 680px;
+	}
+	#main {
+		margin-top: -25px;
+		width: 925px;
+		padding-top: 3%;
+	}
+}

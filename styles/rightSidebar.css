@@ -1,0 +1,49 @@
+/**
+ * styles/rightSidebar.css
+ *
+ * Copyright (c) 2013-2014 Simon Fraser University Library
+ * Copyright (c) 2003-2014 John Willinsky
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ *
+ * Site-wide shared elements for pages including a right-hand sidebar.
+ *
+ */
+
+/**
+ * Common HTML elements
+ */
+
+
+#headerTitle {
+	text-align: center;
+	width: 100%;
+}
+
+#body {
+	position: absolute;
+	top: 20%;
+	background-color: transparent !important;
+	width: 950px !important;
+	position: absolute;
+	top: 11em;
+}
+
+#rightSidebar {
+	float: right;
+	width: 14%;
+	/*padding: 23em 0em 1em 0em;*/
+	font-size: 0.65em;
+	height: 100%;
+	/*margin-right: 10%;
+	margin-left: 2%;*/
+	}
+
+* html #rightSidebar { margin-right: 5%; }
+
+#main {
+	float: left;
+	/*width: 75%;
+	margin-left: 13%;*/
+	display: inline;
+	overflow: hidden;
+}
