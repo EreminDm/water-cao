@@ -13,7 +13,6 @@
 }
 
 #additionalHomeContent p {
-	margin-left: -100px;
     padding-top: 30px;
     width: 925px;
 }
@@ -22,8 +21,6 @@
     background-color: none;
     border-color: #9940ff;
     margin-bottom: 19px;
-    margin-left: 0;
-    margin-right: 0;
     margin-top: 19px;
     position: relative;
     text-align: center;
@@ -296,7 +293,6 @@ tbody tr td {
 }
 
 #additionalHomeContent div p {
-    margin-left: -100px;
     width: 925px;
 }
 
@@ -311,7 +307,7 @@ tbody tr td {
 
 #issueCoverImage a img {
 	position: relative;
-	left: 23%;
+	margin-left:35%;
 	border-style: solid;
 	border-color: #0d0b0d;
 	padding-top: 10px;
@@ -401,7 +397,5 @@ html body {
 	#body {
 		width: 950px;
 	}
-	#content {
-		width: 750px;
-	}
+
 }
