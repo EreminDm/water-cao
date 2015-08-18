@@ -20,12 +20,8 @@
 }
 
 #body {
-	position: absolute;
-	top: 20%;
 	background-color: transparent !important;
 	width: 950px !important;
-	position: absolute;
-	top: 11em;
 }
 
 #rightSidebar {
