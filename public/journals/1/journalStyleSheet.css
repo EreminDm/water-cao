@@ -12,11 +12,6 @@
     width: 70px;
 }
 
-#additionalHomeContent p {
-    padding-top: 30px;
-    width: 925px;
-}
-
 #content {
     background-color: none;
     border-color: #9940ff;
@@ -29,10 +24,6 @@
 #content ol {
     line-height: 1.6em;
     padding-bottom: 15px;
-}
-
-#content p {
-    line-height: 1.6em;
 }
 
 #current {
@@ -60,11 +51,6 @@
 
 #home a {
     font-size: 15px;
-}
-
-#journalDescription {
-    height: 80px;   
-    width: 100%;
 }
 
 #journalDescription em strong {
@@ -292,10 +278,6 @@ tbody tr td {
     text-align: center;
 }
 
-#additionalHomeContent div p {
-    width: 925px;
-}
-
 #content ol li {
     text-align: left;
     width: 120%;
@@ -307,7 +289,6 @@ tbody tr td {
 
 #issueCoverImage a img {
 	position: relative;
-	margin-left:35%;
 	border-style: solid;
 	border-color: #0d0b0d;
 	padding-top: 10px;
@@ -362,25 +343,14 @@ html body {
 		display: none;
 	}
 
-	ul.menu {
-		width:100%;
-	}
-	#journalDescription {
-		width:90%;	
-	}
-	#additionalHomeContent {
-		width: 90%;
-	}
-	#additionalHomeContent div p {
-		width:100%	
-	}
-	#additionalHomeContent p {
-		width: 100%;
-	}
 	#sidebar {
 		display: none; /* отключение языковых настроек*/
 	}
+	journalDescription em {
+		padding-bottom: 1em;
+	}
 }
+
 @media (min-device-width: 1024px ) {
 	
 	#additionalHomeContent a p {
@@ -396,6 +366,15 @@ html body {
 	}
 	#body {
 		width: 950px;
+	}
+	#content p {
+		line-height: 1.6em;
+	}
+
+	#issueCoverImage a img {
+		margin-left:35%;
+		width: 98%;
+    	height: 80%;
 	}
 
 }
