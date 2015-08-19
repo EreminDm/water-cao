@@ -15,8 +15,6 @@
 #content {
     background-color: none;
     border-color: #9940ff;
-    margin-bottom: 19px;
-    margin-top: 19px;
     position: relative;
     text-align: center;
 }
@@ -280,7 +278,7 @@ tbody tr td {
 
 #content ol li {
     text-align: left;
-    width: 120%;
+    width: 95%;
 }
 
 #additionalHomeContent p a{
@@ -306,7 +304,7 @@ html body {
     height: 100%;
 }
 
-@media (max-device-width: 320px) {
+@media (max-device-width: 360px) {
 	html {
 		background: none;
 		width: 100%;
@@ -349,6 +347,10 @@ html body {
 	journalDescription em {
 		padding-bottom: 1em;
 	}
+	#issueCoverImage a img {
+		width: 98%;
+    	height: 80%;
+	}
 }
 
 @media (min-device-width: 1024px ) {
@@ -372,9 +374,9 @@ html body {
 	}
 
 	#issueCoverImage a img {
-		margin-left:35%;
-		width: 98%;
-    	height: 80%;
+		margin-left:27%;
 	}
-
+	#content {
+		padding-top: 1.5 em;
+	}
 }
