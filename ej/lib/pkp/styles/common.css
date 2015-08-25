@@ -386,16 +386,15 @@ ul.pkp_form_error_list { /* Named for compatibility with new lessphp structure *
 ul.menu {
 	margin: 0;
 	padding: 0;
-	min-width: 600px;
-	max-width: 900px;
-	display: table-row;
+	/*min-width: 600px;
+	max-width: 900px;*/
+
 	}
 
 ul.menu li {
 	margin: 0;
 	padding: 0;
 	padding-right: 1em;
-	display: table-cell;
 	width: auto;
 	font-size: 1.5em;
 	text-align: center;
@@ -407,11 +406,7 @@ ul.menu li.current {
 }
 
 ul.menu a {
-	font-size: 0.85em;
-	text-transform: uppercase;
 	text-decoration: none;
-	display: table-cell;
-	vertical-align: middle;
 	}
 
 ul.steplist {
