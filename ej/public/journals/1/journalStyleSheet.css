@@ -316,6 +316,10 @@ html body {
 	input.textField {
 		width: 95%
 	}
+	#open {
+
+
+	}
 }
 
 @media (min-device-width: 1024px ) {
