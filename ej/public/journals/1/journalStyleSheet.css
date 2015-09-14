@@ -374,7 +374,7 @@ html body {
 	#subNavbar {
 		display: none;
 	}
-	#navbar .fa fa-bars {
+	#main .fa fa-bars {
 		display: none;
 	}
 }
