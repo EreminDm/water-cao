@@ -6,7 +6,7 @@
 }
 
 #additionalHomeContent img {
-    height: 70px;    
+    height: 70px;
     width: 70px;
 }
 
@@ -132,11 +132,11 @@ a.icon img {
 }
 
 @font-face {
-  
+
   font-family: 'Georgia';
-  
+
   font-style: normal;
-  
+
   font-weight: 400;
   src: local('Georgia'), url(http://fonts.gstatic.com/l/font?kit=icWX53l1ZgJxqcY5jyCx2w) format('woff2');
 }
@@ -277,26 +277,26 @@ html body {
 	#pkp-common-openJournalSystems {
 		width:100%;
 	}
-	
-	html body { 
+
+	html body {
 		background:none;
 	}
 	#container{
 		width: 100% !important;
 		min-width: 100% !important;
 	}
-	
+
 	#headerTitle h1{
     	margin: 0;
     	padding: 0;
 		background: url(http://water-ca.org/ej/public/journals/mobileHeader_en.png) no-repeat;
 		height: 50px;
 		background-size: 50%;
-		
+
 	}
-	
+
 	#headerTitle h1 img {
-		
+
     	color: #ffffff;
     	height: 8.6486%;
     	width: 37.8378%;
@@ -316,10 +316,13 @@ html body {
 		width: 98%;
     	height: 80%;
 	}
+	input.textField {
+		width: 95%
+	}
 }
 
 @media (min-device-width: 1024px ) {
-	
+
 	#additionalHomeContent a p {
 		width: 680px;
 	}
@@ -358,6 +361,7 @@ html body {
 	}
 	#about {
 		padding: 8.875px;
+		width: 100%;
 	}
 	#current {
 		padding: 8.875px;
@@ -370,5 +374,8 @@ html body {
 	}
 	#search {
 		padding: 8.875px;
+	}
+	#subNavbar {
+		display: none;
 	}
 }
