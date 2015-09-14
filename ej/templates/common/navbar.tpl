@@ -10,7 +10,6 @@
  *}
 <div id="navbar">
 	<ul class="menu">
-		<i class="fa fa-bars"></i>
 		<li id="home"><a href="http://water-ca.org/ej/index.php/IUVR">{translate key="navigation.home"}</a></li>
 		<li id="about"><a href="http://water-ca.org/ej/index.php/IUVR/pages/view/about">{translate key="navigation.about"}</a></li>
 		<li id="about"><a href="http://water-ca.org/ej/index.php/IUVR/pages/view/authors">{translate key="navigation.authors"}</a></li>

@@ -166,6 +166,7 @@
 {/if}
 
 <div id="main">
+	<i class="fa fa-bars"></i>
 {include file="common/navbar.tpl"}
 {**
 {include file="common/breadcrumbs.tpl"}

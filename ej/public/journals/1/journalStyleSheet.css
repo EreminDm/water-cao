@@ -1,6 +1,3 @@
-
-
-
 #about a {
     font-family: Georgia;
 }
@@ -361,7 +358,6 @@ html body {
 	}
 	#about {
 		padding: 8.875px;
-		width: 100%;
 	}
 	#current {
 		padding: 8.875px;
@@ -376,6 +372,9 @@ html body {
 		padding: 8.875px;
 	}
 	#subNavbar {
+		display: none;
+	}
+	#navbar .fa fa-bars {
 		display: none;
 	}
 }
