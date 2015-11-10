@@ -121,6 +121,9 @@ a.icon img {
     text-decoration: underline;
     text-transform: none;
 }
+ul li p{
+	text-align: left !important;
+}
 
 @font-face {
 
@@ -264,6 +267,7 @@ html body {
 	html {
 		background: none;
 		width: 100%;
+		height: 100%
 	}
 	#pkp-common-openJournalSystems {
 		width:100%;
@@ -326,6 +330,15 @@ html body {
 		position: absolute;
 		margin-left:80%;
 		margin-top:-50px;
+	}
+	#pluginMissing{
+		display: none;
+	}
+	#inlinePdfResizer{
+		display:none;
+	}
+	#fullscreenShow{
+		display:none !important;
 	}
 }
 
