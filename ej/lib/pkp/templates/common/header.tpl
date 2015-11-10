@@ -32,6 +32,7 @@
 	<link rel="stylesheet" href="{$baseUrl}/styles/common.css" type="text/css" />
 	<link rel="stylesheet" href="{$baseUrl}/styles/compiled.css" type="text/css" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="{$baseUrl}/public/journals/1/hamburger.js"></script>
 
 
 	<!-- Base Jquery -->
@@ -166,7 +167,6 @@
 {/if}
 
 <div id="main">
-	<i class="fa fa-bars"></i>
 {include file="common/navbar.tpl"}
 {**
 {include file="common/breadcrumbs.tpl"}

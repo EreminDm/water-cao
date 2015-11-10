@@ -8,7 +8,8 @@
  * Navigation Bar
  *
  *}
-<div id="navbar">
+ 	<i onclick="hamburger()" class="fa fa-bars fa-2x"></i>
+<div id="navbar" class="menuClose">
 	<ul class="menu">
 		<li id="home"><a href="http://water-ca.org/ej/index.php/IUVR">{translate key="navigation.home"}</a></li>
 		<li id="about"><a href="http://water-ca.org/ej/index.php/IUVR/pages/view/about">{translate key="navigation.about"}</a></li>
@@ -48,3 +49,4 @@
 		<li id="about"><a href="http://water-ca.org/ej/index.php/IUVR/pages/view/contact">{translate key="about.contact"}</a></li>
 	</ul>
 </div>
+<hr>
