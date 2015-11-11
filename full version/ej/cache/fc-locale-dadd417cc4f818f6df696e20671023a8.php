@@ -1,0 +1,17 @@
+<?php return array (
+  'plugins.importexport.quickSubmit.addToExisting' => 'Добавить к существующему выпуску:',
+  'plugins.importexport.quickSubmit.chooseDestination' => 'Куда отправить',
+  'plugins.importexport.quickSubmit.chooseDestinationDescription' => 'Выберите, хотите ли вы добавить новые материалы к существующему выпуску или оставить их в очереди на редактирование.',
+  'plugins.importexport.quickSubmit.displayName' => 'Плагин «Быстрая отправка»',
+  'plugins.importexport.quickSubmit.description' => 'Плагин отправки в один шаг',
+  'plugins.importexport.quickSubmit.descriptionLong' => 'Этот плагин позволяет вам быстро добавлять готовые материалы в очередь на редактирование или напрямую в выпуск.',
+  'plugins.importexport.quickSubmit.issueRequired' => 'Вы должны выбрать выпуск, к которому вы хотите добавить статью.',
+  'plugins.importexport.quickSubmit.leaveUnpublished' => 'Оставить неопубликованным',
+  'plugins.importexport.quickSubmit.saveAndCreateAnother' => 'Сохранить и создать другой',
+  'plugins.importexport.quickSubmit.submissionData' => 'Данные для отправки',
+  'plugins.importexport.quickSubmit.submissionDescription' => 'Выберите файл, который будет использоваться в качестве файла окончательных гранок для данного материала.',
+  'plugins.importexport.quickSubmit.submissionRequired' => 'Вы должны загрузить файл для этого материала.',
+  'plugins.importexport.quickSubmit.success' => 'Статья добавлена',
+  'plugins.importexport.quickSubmit.successDescription' => 'Статья была успешно создана.',
+  'plugins.importexport.quickSubmit.successReturn' => 'Вернуться к плагину «Быстрая отправка».',
+); ?>

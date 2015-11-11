@@ -1,0 +1,28 @@
+<?php return array (
+  'plugins.importexport.crossref.description' => 'Этот плагин экспортирует или регистрирует метаданные статьи в формате CrossRef.',
+  'plugins.importexport.crossref.displayName' => 'Плагин «Экспорт/Регистрация в CrossRef»',
+  'plugins.importexport.crossref.requirements' => 'Требования',
+  'plugins.importexport.crossref.requirements.satisfied' => 'Все требования плагина выполнены.',
+  'plugins.importexport.crossref.error.pluginNotConfigured' => 'Плагин «CrossRef» не настроен! Настройте этот плагин на его <a href="{$settingsUrl}">странице настроек</a>.',
+  'plugins.importexport.crossref.error.DOIsNotAvailable' => 'Плагин открытого идентификатора «DOI» не настроен! Включите и настройте этот плагин на странице настроек <a href="{$doiUrl}" target="_blank">плагина «DOI»</a>.',
+  'plugins.importexport.crossref.error.publisherNotConfigured' => 'Издатель журнала не настроен! Вы должны добавить организацию-издателя на <a href="{$publisherUrl}" target="_blank">шаге 1.5 настройки журнала</a>.',
+  'plugins.importexport.crossref.settings.depositorIntro' => 'Следующая информация необходима для успешной передачи в депозитарий CrossRef.',
+  'plugins.importexport.crossref.settings.form.depositorName' => 'Имя ответственного',
+  'plugins.importexport.crossref.settings.form.depositorEmail' => 'E-mail ответственного',
+  'plugins.importexport.crossref.settings.form.depositorNameRequired' => 'Пожалуйста, введите имя ответственного.',
+  'plugins.importexport.crossref.settings.form.depositorEmailRequired' => '>Пожалуйста, введите адрес электронной почты ответственного.',
+  'plugins.importexport.crossref.settings.form.automaticRegistration' => 'Автоматически регистрировать DOI',
+  'plugins.importexport.crossref.settings.form.automaticRegistration.description' => 'OJS будет автоматически передавать DOI статей в депозитарий CrossRef после их опубликования. Обратите внимание, что на эту обработку после опубликования может требоваться некоторое время. Вы можете проверить все незарегистрированные DOI в <a href="">списке незарегистрированных статей</a>.',
+  'plugins.importexport.crossref.registrationIntro' => 'Этот плагин может быть настроен на автоматическую регистрацию цифровых идентификаторов объектов (DOI) в CrossRef. Вам будут нужны имя пользователя и пароль (их можно получить у <a href="http://www.crossref.org" target="_blank">CrossRef</a>), чтобы делать это. Если у вас нет вашего собственного имени пользователя и пароля вы по-прежнему сможете экспортировать в формат CrossRef XML, но не сможете регистрировать ваши DOI в CrossRef напрямую из OJS.',
+  'plugins.importexport.crossref.settings.description' => 'Здесь вы можете <a href="{$settingsUrl}">настроить плагин «Экспорт/Регистрация в CrossRef»</a>.',
+  'plugins.importexport.crossref.settings.form.description' => 'Пожалуйста настройте плагин «Экспорт/Регистрация в CrossRef»:',
+  'plugins.importexport.crossref.settings.form.username' => 'Имя пользователя',
+  'plugins.importexport.crossref.settings.form.usernameRequired' => 'Пожалуйста, введите имя пользователя, которое вы получили от CrossRef.',
+  'plugins.importexport.crossref.export.unregistered' => 'Незарегистрированные статьи',
+  'plugins.importexport.crossref.export.selectUnregistered' => 'Выбрать незарегистрированные статьи',
+  'plugins.importexport.crossref.export.noUnregistered' => 'Все опубликованные статьи уже были зарегистрированы (или ни одной из них не был присвоен DOI).',
+  'plugins.importexport.crossref.cliUsage' => 'Вызов: 
+{$scriptName} {$pluginName} export xmlFileName journal_path {issues|articles} objectId1 [objectId2] ...
+{$scriptName} {$pluginName} register journal_path {issues|articles} objectId1 [objectId2] ...',
+  'plugins.importexport.crossref.export.error.articleDatePublishedMissing' => 'Дата опубликования отсутствует для статьи с ID {$param}.',
+); ?>

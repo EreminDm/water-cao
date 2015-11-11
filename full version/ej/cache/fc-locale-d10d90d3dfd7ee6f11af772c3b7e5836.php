@@ -1,0 +1,17 @@
+<?php return array (
+  'plugins.generic.customBlockManager.displayName' => 'Плагин «Управление блоками пользователя»',
+  'plugin.generic.customBlockManager.introduction' => 'Вы можете использовать этот плагин для создания и удаления плагинов блоков пользователя. Затем вы можете отредактировать содержимое на странице <a href="{$systemPluginsUrl}">Системные плагины</a> (в Разделе «Плагины блоков»).  Для размещения вашего плагина в нужном месте на боковой панели, перейдите к <a href="{$setupStep56}">шагу 5.6 установки</a>',
+  'plugins.generic.customBlockManager.settings' => 'Настройки',
+  'plugins.generic.customBlockManager.description' => 'Этот плагин позволяет вам управлять блоками пользователя на боковой панели. Вы можете отредактировать блоки в настройках каждого плагина, который вы создали здесь.',
+  'plugins.generic.customBlockManager.blockName' => 'Имя блока',
+  'plugins.generic.customBlockManager.action' => 'Действие',
+  'plugins.generic.customBlockManager.delete' => 'Удалить',
+  'plugins.generic.customBlockManager.addBlock' => 'Добавить блок',
+  'plugins.generic.customBlock.content' => 'Контент',
+  'plugins.generic.customBlock.saved' => 'Контент блока был сохранен.',
+  'plugins.generic.customBlock.nameSuffix' => '(Плагин блока пользователя)',
+  'plugins.generic.customBlock.description' => 'Это блок, созданный пользователем.',
+  'plugins.generic.customBlock.editContent' => 'Редактировать содержимое боковой панели',
+  'plugins.generic.customBlock.contentRequired' => 'Требуется некоторый контент. Если вы хотите удалить этот блок, вы можете это сделать при помощи плагина «Управление блоками пользователя» или убрав отметку этого блока на шаге 5 установки журнала.',
+  'plugins.generic.customBlock.edit' => 'Редактировать',
+); ?>

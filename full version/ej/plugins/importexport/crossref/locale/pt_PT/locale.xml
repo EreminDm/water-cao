@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/importexport/crossref/locale/pt_PT/locale.xml
+  *
+  * Copyright (c) 2013-2014 Simon Fraser University Library
+  * Copyright (c) 2003-2014 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings for the pt_PT locale.
+  *
+  -->
+ 
+<locale name="pt_PT" full_name="Português">
+	<message key="plugins.importexport.crossref.displayName">Plugin Exportação CrossRef XML</message>
+	<message key="plugins.importexport.crossref.description">Exporta metadados dos artigos no formato CrossRef XML.</message>
+	
+	<message key="plugins.importexport.crossref.cliUsage">Modo de Usar: 
+{$scriptName} {$pluginName} [xmlFileName] [journal_path] artigos [articleId1] [articleId2] ...
+{$scriptName} {$pluginName} [xmlFileName] [journal_path] edição [issueId]</message>
+	<message key="plugins.importexport.crossref.export">Dados Exportação</message>
+	<message key="plugins.importexport.crossref.export.issues">Exportar Números</message>
+	<message key="plugins.importexport.crossref.export.selectIssue">Seleccionar Número para exportar.</message>
+	<message key="plugins.importexport.crossref.export.articles">Exportar Artigos</message>
+	<message key="plugins.importexport.crossref.export.selectArticle">Seleccionar Artigos para exportar.</message>
+	<message key="plugins.importexport.crossref.cliError">ERRO:</message>
+	<message key="plugins.importexport.crossref.export.error.issueNotFound">Nenhum número corresponde ao ID específico do número "{$issueId}".</message>
+	<message key="plugins.importexport.crossref.export.error.articleNotFound">Nenhum artigo corresponde ao ID específico do artigo "{$articleId}".</message>
+	<message key="plugins.importexport.crossref.errors.noDOIprefix">Para utilizar este plug-in, por favor vá a "Public Identifier" categoria plug-in, activar e configurar o plug-in DOI  e especificar um prefixo DOI válido.</message>
+</locale>

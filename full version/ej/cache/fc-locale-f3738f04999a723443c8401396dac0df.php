@@ -1,0 +1,17 @@
+<?php return array (
+  'plugins.importexport.erudit.displayName' => 'Плагин «Экспорт статей в формате Erudit»',
+  'plugins.importexport.erudit.description' => 'Этот плагин экспортирует статьи используя английскую версию DTD Erudit.',
+  'plugins.importexport.erudit.cliUsage' => 'Вызов: {$scriptName} {$pluginName} [xmlFileName] [journalPath] [articleId] [galleyLabel]',
+  'plugins.importexport.erudit.export' => 'Экспортировать данные',
+  'plugins.importexport.erudit.export.issues' => 'Экспортировать выпуски',
+  'plugins.importexport.erudit.export.sections' => 'Экспортировать разделы',
+  'plugins.importexport.erudit.export.articles' => 'Экспортировать статьи',
+  'plugins.importexport.erudit.selectIssue' => 'Выбрать выпуск',
+  'plugins.importexport.erudit.selectArticle' => 'Выбрать статью',
+  'plugins.importexport.erudit.cliError' => 'ОШИБКА:',
+  'plugins.importexport.erudit.error.unknownJournal' => 'Указанный путь журнала, «{$journalPath}», не существует.',
+  'plugins.importexport.erudit.export.error.couldNotWrite' => 'Не могу записать в файл «{$fileName}».',
+  'plugins.importexport.erudit.export.error.articleNotFound' => 'Нет статьи с указанным ID статьи «{$articleId}».',
+  'plugins.importexport.erudit.export.error.galleyNotFound' => 'Нет гранки с указанной меткой гранки «{$galleyLabel}».',
+  'plugins.importexport.erudit.unavailable' => 'Недоступно',
+); ?>

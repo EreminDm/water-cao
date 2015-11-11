@@ -1,0 +1,15 @@
+<?php return array (
+  'plugins.importexport.METSExport.displayName' => 'Плагин «Экспорт в METS XML»',
+  'plugins.importexport.METSExport.description' => 'Этот плагин экспортирует журналы в METS XML',
+  'plugins.importexport.METSExport.settings' => 'Настройки',
+  'plugins.importexport.METSExport.export' => 'Экспортировать данные',
+  'plugins.importexport.METSExport.export.issues' => 'Экспортировать выпуски',
+  'plugins.importexport.METSExport.export.selectIssue' => 'Выберите выпуски для экспорта.',
+  'plugins.importexport.METSExport.export.error.IssuesNotFound' => 'Нет выпуска с указанным ID выпуска «{$issueId}».',
+  'plugins.importexport.METSExport.export.error.unknownIssue' => 'Неизвестный путь журнала {$journalPath}',
+  'plugins.importexport.METSExport.settings.FContent' => 'Использовать кодирование base64 для контента',
+  'plugins.importexport.METSExport.settings.FLocat' => 'Использовать адрес (URL) битового потока для контента',
+  'plugins.importexport.METSExport.settings.organization' => 'Элемент атрибута организации METS:agent',
+  'plugins.importexport.METSExport.settings.preservationLevel' => 'Уровень сохранения PREMIS',
+  'plugins.importexport.METSExport.settings.exportSuppFiles' => 'Экспортировать дополнительные файлы',
+); ?>

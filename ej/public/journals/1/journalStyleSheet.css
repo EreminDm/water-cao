@@ -17,6 +17,7 @@
 #content ol {
     line-height: 1.6em;
     padding-bottom: 15px;
+	padding-left:25px;
 }
 
 #header {
@@ -232,12 +233,13 @@ tr td p {
 }
 
 #content p {
-    text-align: center;
+    text-align: left !important;
 }
 
 #content ol li {
-    text-align: left;
+    text-align: left !important;
     width: 95%;
+	
 }
 
 #additionalHomeContent p a{

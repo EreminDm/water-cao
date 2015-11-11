@@ -1,0 +1,17 @@
+<?php return array (
+  'plugins.reports.counter.description' => 'Плагин «COUNTER» позволяет сформировать отчеты об активности сайта.',
+  'plugins.reports.counter' => 'Плагин «Отчет COUNTER»',
+  'plugins.reports.counter.1a.title' => 'Отчет журнала 1 (R2): Запросы полных текстов статей по месяцам и журналам',
+  'plugins.reports.counter.1a.title1' => 'Отчет журнала 1 (R2)',
+  'plugins.reports.counter.1a.title2' => 'Количество успешных запросов полных текстов статей по месяцам и журналам (год {$year})',
+  'plugins.reports.counter.1a.dateRun' => 'Дата запуска:',
+  'plugins.reports.counter.1a.publisher' => 'Издатель',
+  'plugins.reports.counter.1a.platform' => 'Платформа',
+  'plugins.reports.counter.1a.printIssn' => 'ISSN печатной версии',
+  'plugins.reports.counter.1a.onlineIssn' => 'ISSN онлайн-версии',
+  'plugins.reports.counter.1a.ytdTotal' => 'YTD (Итого)',
+  'plugins.reports.counter.1a.ytdHtml' => 'YTD HTML',
+  'plugins.reports.counter.1a.ytdPdf' => 'YTD PDF',
+  'plugins.reports.counter.1a.totalForAllJournals' => 'Итого для всех журналов',
+  'plugins.reports.counter.legacyStats' => 'Ссылки ниже генерируют отчеты, используя данные старого плагина «COUNTER». Если вы хотите сгенерировать отчеты «COUNTER», используя новый тип метрики OJS COUNTER, воспользуйтесь ссылками выше.',
+); ?>
