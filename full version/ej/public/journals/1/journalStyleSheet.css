@@ -26,17 +26,6 @@
 #headerTitle h1{
 	padding-top: 5%;
 }
-#headerTitle h1 img {
-    color: #ffffff;
-    height: 80px;
-    width: 700px;
-	background-color: none;
-	padding-left: 12%;
-	}
-
-#home a {
-    font-size: 15px;
-}
 
 #journalDescription em strong {
     color: #000000;
@@ -120,6 +109,9 @@ a.icon img {
     font-variant: normal;
     text-decoration: underline;
     text-transform: none;
+}
+ul li p{
+	text-align: left !important;
 }
 
 @font-face {
@@ -229,16 +221,12 @@ tr td p {
 }
 
 #content p {
-    text-align: center;
+     text-align: left !important;
 }
 
 #content ol li {
-    text-align: left;
+    text-align: left !important;
     width: 95%;
-}
-
-#additionalHomeContent p a{
-	margin-right: 65%;
 }
 
 #issueCoverImage a img {
@@ -264,6 +252,7 @@ html body {
 	html {
 		background: none;
 		width: 100%;
+		height: 100%
 	}
 	#pkp-common-openJournalSystems {
 		width:100%;
@@ -297,14 +286,6 @@ html body {
 		display: none;
 	}
 
-	#sidebar {
-		position: absolute;
-		padding-left: 49%;
-	}
-	
-	#rightSidebar {
-	margin-top:-40%;
-	}
 	journalDescription em {
 		padding-bottom: 1em;
 	}
@@ -315,9 +296,63 @@ html body {
 	input.textField {
 		width: 95%
 	}
-	#open {
-
-
+	
+	#content{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	
+	#navbar.menuClose{
+  		display:none;
+	}
+	#navbar.menuClose.open{
+ 		display: block;
+		position: fixed;
+		height: 100%;
+		z-index: 1;
+	}
+	.fa.fa-bars{
+		margin-top: -15%;
+		padding-left: 10px;
+		position: absolute;
+	}
+	#rightSidebar{
+		position: absolute;
+		margin-left:80%;
+		margin-top:-50px;
+	}
+	#pluginMissing{
+		display: none;
+	}
+	#inlinePdfResizer{
+		display:none;
+	}
+	#fullscreenShow{
+		display:none !important;
+	}
+	#sidebarLanguageToggle{
+		display: inline;
+	}
+	#sidebarLanguageToggle img{
+		position: absolute;
+		margin-left: -20px;
+		margin-top: 10px;
+	}
+	#sidebarLanguageToggle a.icon{
+		position: absolute;
+		padding-left: 45px;
+	}
+	hr {
+		margin:0px;
+	}
+	#content ul li a{
+		font-size:0.9em;
+	}
+	ul.menu li {
+		font-size: 2.8em;
+	}
+	#headerTitle {
+   		 width: 85%;
 	}
 }
 
@@ -380,16 +415,21 @@ html body {
 	i.fa.fa-bars {
 		display: none;
 	}
-	#content table {
+	/*#content table {
 		border: 1px;
 		margin: 0%;
 		width:100% !important;
-	}
-	
+	}*/	
 	#rightSidebar {
     margin-left: 874px;
     margin-top: -120px;
     position: absolute;
 }
-
+#headerTitle h1 img {
+    color: #ffffff;
+    height: 80px;
+    width: 700px;
+	background-color: none;
+	margin-left:-15%;
+	}
 }

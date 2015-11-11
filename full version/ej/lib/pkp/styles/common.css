@@ -41,7 +41,7 @@ table {
 	border: 0;
 	border-spacing: 0;
 	font-size: 1.0em;
-	text-align: center !important;
+	text-align: center;
 }
 
 form {
@@ -102,8 +102,8 @@ input.defaultButton {
  */
 
 #container {
-	width: 920px !important;
-	min-width: 730px !important;
+	width: 920px;
+	min-width: 730px;
 	margin: 0 auto;
 	text-align: center;
 	}
@@ -115,7 +115,7 @@ input.defaultButton {
 }
 
 #headerTitle {
-	text-align: left !important;
+	text-align: left;
 	margin: 0 auto;
 	padding: 0;
 	width: 100%;
@@ -134,7 +134,7 @@ input.defaultButton {
 	position: static;
 	clear: both;
 	text-align: center;
-	background-color: #fff !important;
+	background-color: #fff;
 }
 
 #footerContent {
@@ -240,10 +240,6 @@ a.action, a.file {
 
 a.icon {
 	text-decoration: none;
-}
-
-a.icon img {
-	border: 0;
 }
 
 a.icon:hover {
@@ -394,9 +390,8 @@ ul.menu {
 ul.menu li {
 	margin: 0;
 	padding: 0;
-	padding-right: 1em;
 	width: auto;
-	font-size: 1.5em;
+	font-size: 1.6em;
 	text-align: left;
 	vertical-align: bottom;
 	}
