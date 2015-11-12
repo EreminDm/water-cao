@@ -80,6 +80,7 @@ function sortSearch(heading, direction) {
 
 {if $displayResults}
 	<div id="submissions">
+	<div class="table-responsive">
 
 <table width="100%" class="listing">
 	<tr>
@@ -140,6 +141,7 @@ function sortSearch(heading, direction) {
 	</tr>
 {/if}
 </table>
+</div>
 </div>
 {else}
 

@@ -40,6 +40,7 @@
 <div id="issueId">
 <h3>{translate key="editor.issues.galleys"}</h3>
 <p>{translate key="editor.issues.issueGalleysDescription"}</p>
+<div class="table-responsive">
 <table width="100%" class="data">
 {if count($formLocales) > 1}
 	<tr valign="top">
@@ -83,6 +84,7 @@
 		<td colspan="6" class="separator">&nbsp;</td>
 	</tr>
 </table>
+</div>
 	<br />
 	<input type="file" name="galleyFile" id="galleyFile" size="10" class="uploadField" />
 	<input type="submit" value="{translate key="common.upload"}" class="button" />

@@ -8,6 +8,7 @@
  * Show listing of unassigned submissions.
  *}
 <div id="submissions">
+	<div class="table-responsive">
 <table width="100%" class="listing">
 	<tr>
 		<td colspan="5" class="headseparator">&nbsp;</td>
@@ -49,5 +50,6 @@
 	</tr>
 {/if}
 </table>
+</div>
 </div>
 

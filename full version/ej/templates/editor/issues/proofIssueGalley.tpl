@@ -19,6 +19,7 @@
 	<link rel="stylesheet" href="{$baseUrl}/lib/pkp/styles/common.css" type="text/css" />
 	<link rel="stylesheet" href="{$baseUrl}/styles/common.css" type="text/css" />
 	<link rel="stylesheet" href="{$baseUrl}/styles/compiled.css" type="text/css" />
+	<link rel="stylesheet" href="{$baseUrl}/public/journals/1/journalStyleSheet.css" type="text/css" />
 
 	{foreach from=$stylesheets item=cssUrl}
 		<link rel="stylesheet" href="{$cssUrl}" type="text/css" />
@@ -39,6 +40,7 @@
 	<frame src="{$galleyUrl}" frameborder="0" />
 <noframes>
 <body>
+	<div class="table-responsive">
 	<table width="100%">
 		<tr>
 			<td align="center">
@@ -46,6 +48,7 @@
 			</td>
 		</tr>
 	</table>
+	</div>
 </body>
 </noframes>
 </frameset>

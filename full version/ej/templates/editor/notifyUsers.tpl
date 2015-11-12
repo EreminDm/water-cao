@@ -43,6 +43,7 @@
 {/if}
 
 <div id="recipients">
+<div class="table-responsive">
 <h3>{translate key="email.recipients"}</h3>
 <table id="recipients" class="data" width="100%">
 <tr valign="top">
@@ -92,11 +93,13 @@
 	</tr>
 {/if}
 </table>
+</div>
 </div>{* recipients *}
 
 <br/>
 
 <div id="issue">
+<div class="table-responsive">
 <h3>{translate key="issue.issue"}</h3>
 <table class="data" width="100%">
 <tr valign="top">
@@ -114,10 +117,11 @@
 </tr>
 </table>
 </div>
+</div>
 
 <br/>
 
-
+<div class="table-responsive">
 <table id="email" class="data" width="100%">
 <tr valign="top">
 	<td class="label">{translate key="email.from"}</td>
@@ -135,6 +139,7 @@
 
 <p><input name="send" type="submit" value="{translate key="email.send"}" class="button defaultButton" /> <input type="button" value="{translate key="common.cancel"}" class="button" onclick="history.go(-1)" /></p>
 </form>
+</div>
 </div>
 {include file="common/footer.tpl"}
 

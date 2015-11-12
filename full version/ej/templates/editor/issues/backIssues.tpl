@@ -35,6 +35,7 @@ $(document).ready(function() { setupTableDND("#dragTable", "moveIssue"); });
 {/if}
 
 <div id="issues">
+<div class="table-responsive">
 <table width="100%" class="listing" id="dragTable">
 	<tr>
 		<td colspan="5" class="headseparator">&nbsp;</td>
@@ -76,6 +77,7 @@ $(document).ready(function() { setupTableDND("#dragTable", "moveIssue"); });
 	</tr>
 {/if}
 </table>
+</div>
 
 <form action="{url op="setCurrentIssue"}" method="post">
 	{translate key="journal.currentIssue"}&nbsp;&nbsp;

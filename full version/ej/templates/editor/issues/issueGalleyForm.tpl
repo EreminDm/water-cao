@@ -20,6 +20,7 @@
 {include file="common/formErrors.tpl"}
 <div id="galleyFileData">
 <p>{translate key="submission.layout.galleyFileData"}</p>
+<div class="table-responsive">
 <table class="data" width="100%">
 <tr valign="top">
 	<td width="20%" class="label">{fieldLabel name="label" required="true" key="submission.layout.galleyLabel"}</td>
@@ -75,6 +76,7 @@
 	</td>
 </tr>
 </table>
+</div>
 </div>
 
 <br />

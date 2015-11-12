@@ -34,6 +34,7 @@
 <div id="identification">
 <h3>{translate key="editor.issues.identification"}</h3>
 
+<div class="table-responsive">
 <table width="100%" class="data">
 {if count($formLocales) > 1}
 	<tr valign="top">
@@ -77,11 +78,13 @@
 	</tr>
 </table>
 </div>
+</div>
 
 {if $currentJournal->getSetting('publishingMode') == $smarty.const.PUBLISHING_MODE_SUBSCRIPTION}
 <div class="separator"></div>
 <div id="access">
 <h3>{translate key="editor.issues.access"}</h3>
+<div class="table-responsive">
 <table width="100%" class="data">
 	<tr valign="top">
 		<td width="20%" class="label">{fieldLabel name="accessStatus" key="editor.issues.accessStatus"}</td>
@@ -100,11 +103,13 @@
 	</tr>
 </table>
 </div>
+</div>
 {/if}
 
 <div class="separator"></div>
 <div id="cover">
 <h3>{translate key="editor.issues.cover"}</h3>
+<div class="table-responsive">
 <table width="100%" class="data">
 	<tr valign="top">
 		<td class="label" colspan="2"><input type="checkbox" name="showCoverPage[{$formLocale|escape}]" id="showCoverPage" value="1" {if $showCoverPage[$formLocale]} checked="checked"{/if} /> <label for="showCoverPage">{translate key="editor.issues.showCoverPage"}</label></td>
@@ -133,6 +138,7 @@
 		<td class="value"><input type="checkbox" name="hideCoverPageCover[{$formLocale|escape}]" id="hideCoverPageCover" value="1" {if $hideCoverPageCover[$formLocale]} checked="checked"{/if} /> <label for="hideCoverPageCover">{translate key="editor.issues.hideCoverPageCover"}</label></td>
 	</tr>
 </table>
+</div>
 </div>
 <p><input type="submit" value="{translate key="common.save"}" class="button defaultButton" /> <input type="button" value="{translate key="common.cancel"}" onclick="document.location.href='{url op="index" escape=false}'" class="button" /></p>
 

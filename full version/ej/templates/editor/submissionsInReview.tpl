@@ -8,6 +8,7 @@
  * Show editor's submissions in review.
  *}
 <div id="submissions">
+<div class="table-responsive">
 <table width="100%" class="listing">
 	<tr>
 		<td colspan="8" class="headseparator">&nbsp;</td>
@@ -107,5 +108,6 @@
 	</tr>
 {/if}
 </table>
+</div>
 </div>
 
