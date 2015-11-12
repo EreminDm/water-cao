@@ -26,6 +26,7 @@
 <div id="new">
 {include file="common/formErrors.tpl"}
 
+<div class="table-responsive">
 <table class="data">
 <tr valign="top">
 	<td width="20%" class="label">{fieldLabel name="commentTitle" key="submission.comments.subject"}</td>
@@ -45,6 +46,7 @@
 </tr>
 {/if}
 </table>
+</div>
 
 <p><input type="submit" value="{translate key="common.save"}" class="button defaultButton" /> {if !$isPeerReviewComment}<input type="submit" name="saveAndEmail" value="{translate key="common.saveAndEmail"}" class="button" /> {/if}<input type="button" value="{translate key="common.cancel"}" class="button" onclick="history.go(-1);" /></p>
 

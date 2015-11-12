@@ -32,6 +32,7 @@
 
 {include file="common/formErrors.tpl"}
 
+<div class="table-responsive">
 <table class="data" width="100%">
 
 {if $isNewTemplate}
@@ -69,6 +70,7 @@
 	</tr>
 {/foreach}
 </table>
+</div>
 
 {if $canDisable}
 <p><input type="checkbox" name="enabled" id="emailEnabled" value="1"{if $enabled} checked="checked"{/if} /> <label for="emailEnabled">{translate key="manager.emails.enabled"}</label></p>

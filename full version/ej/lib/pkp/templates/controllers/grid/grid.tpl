@@ -37,6 +37,7 @@
 <div id="{$gridId|escape}" class="pkp_controllers_grid">
 	{if !$grid->getIsSubcomponent()}<div class="wrapper">{/if}
 		{include file="controllers/grid/gridHeader.tpl"}
+		<div class="table-responsive">
 		<table id="{$gridTableId|escape}">
 			<colgroup>
 				{foreach from=$columns item=column}<col {if $column->hasFlag('indent')}class="indent_col"{/if}/>{/foreach}
@@ -78,7 +79,9 @@
 				   can be scrolled independently from the header in a
 				   cross-browser compatible way using only CSS. *}
 				</table>
+				</div>
 				<div class="scrollable">
+				<div class="table-responsive">
 				<table>
 			{/if}
 			{foreach from=$gridBodyParts item=bodyPart}
@@ -96,6 +99,7 @@
 				</tr>
 			</tbody>
 		</table>
+		</div>
 		{if $grid->getIsSubcomponent()}
 			</div>
 		{/if}

@@ -33,6 +33,7 @@ $(document).ready(function() { setupTableDND("#dragTable", "moveCategory"); });
 
 <div id="categories">
 
+<div class="table-responsive">
 <table width="100%" class="listing" id="dragTable">
 	<tr>
 		<td colspan="2" class="headseparator">&nbsp;</td>
@@ -68,6 +69,7 @@ $(document).ready(function() { setupTableDND("#dragTable", "moveCategory"); });
 	</tr>
 {/if}
 </table>
+</div>
 
 <a href="{url op="createCategory"}" class="action">{translate key="admin.categories.create"}</a>
 </div>

@@ -31,6 +31,7 @@ $(document).ready(function() { setupTableDND("#dragTable",
 
 <div id="searches">
 
+<div class="table-responsive">
 <table class="listing" width="100%" id="dragTable">
 	<tr><td class="headseparator" colspan="3">&nbsp;</td></tr>
 	<tr valign="top">
@@ -61,6 +62,7 @@ $(document).ready(function() { setupTableDND("#dragTable",
 		</tr>
 	{/if}
 	</table>
+	</div>
 <br/>
 
 <a href="{url op="createSearch" path=$version->getVersionId()|to_array:$context->getContextId()}" class="action">{translate key="rt.admin.searches.createSearch"}</a><br/>

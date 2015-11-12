@@ -40,6 +40,7 @@
 	<frame src="{$galleyUrl}" frameborder="0" />
 <noframes>
 <body>
+<div class="table-responsive">
 	<table width="100%">
 		<tr>
 			<td align="center">
@@ -47,6 +48,7 @@
 			</td>
 		</tr>
 	</table>
+	</div>
 </body>
 </noframes>
 </frameset>

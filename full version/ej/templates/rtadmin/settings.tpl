@@ -22,6 +22,7 @@
 <div class="separator"></div>
 <div id="rtAdminOptions">
 <h3>{translate key="rt.admin.options"}</h3>
+<div class="table-responsive">
 <table width="100%" class="data">
 	<tr valign="top">
 		<td class="label" width="3%"><input type="checkbox" name="abstract" id="abstract" {if $abstract}checked="checked" {/if}/></td>
@@ -78,6 +79,7 @@
 		</td>
 	</tr>
 </table>
+</div>
 </div>
 <div class="separator">&nbsp;</div>
 <div id="rtAdminRelatedItems">

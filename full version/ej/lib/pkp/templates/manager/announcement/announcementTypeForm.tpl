@@ -28,6 +28,7 @@
 
 {include file="common/formErrors.tpl"}
 
+<div class="table-responsive">
 <table class="data" width="100%">
 {if count($formLocales) > 1}
 	<tr valign="top">
@@ -46,6 +47,7 @@
 	<td width="80%" class="value"><input type="text" name="name[{$formLocale|escape}]" value="{$name[$formLocale]|escape}" size="40" id="name" maxlength="80" class="textField" /></td>
 </tr>
 </table>
+</div>
 
 <p><input type="submit" value="{translate key="common.save"}" class="button defaultButton" /> {if not $typeId}<input type="submit" name="createAnother" value="{translate key="manager.announcementTypes.form.saveAndCreateAnother"}" class="button" /> {/if}<input type="button" value="{translate key="common.cancel"}" class="button" onclick="document.location.href='{url op="announcementTypes" escape=false}'" /></p>
 

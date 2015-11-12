@@ -22,6 +22,7 @@
 	</tr>
 </table>
 
+<div class="table-responsive">
 <table width="100%" class="info">
 	<tr>
 		<td width="40%" colspan="2">
@@ -131,6 +132,7 @@
 		<td colspan="5" class="separator">&nbsp;</td>
 	</tr>
 </table>
+</div>
 
 {translate key="submission.copyedit.copyeditComments"}
 {if $submission->getMostRecentCopyeditComment()}

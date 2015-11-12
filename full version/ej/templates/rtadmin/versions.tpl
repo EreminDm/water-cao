@@ -16,6 +16,7 @@
 <br/>
 
 <div id="versions">
+<div class="table-responsive">
 <table class="listing" width="100%">
 	<tr><td class="headseparator" colspan="3">&nbsp;</td></tr>
 	<tr valign="top">
@@ -44,6 +45,7 @@
 		</tr>
 	{/if}
 	</table>
+	</div>
 </div>	
 <br/>
 

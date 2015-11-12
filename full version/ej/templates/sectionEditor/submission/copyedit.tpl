@@ -25,6 +25,7 @@
 </table>
 {/if}
 
+<div class="table-responsive">
 <table width="100%" class="info">
 	<tr>
 		<td width="28%" colspan="2"><a href="{url op="viewMetadata" path=$submission->getId()}" class="action">{translate key="submission.reviewMetadata"}</a></td>
@@ -210,6 +211,7 @@
 		<td colspan="6" class="separator">&nbsp;</td>
 	</tr>
 </table>
+</div>
 
 {if $authorCopyeditSignoff->getDateCompleted()}
 {assign var="canUploadCopyedit" value="3"}

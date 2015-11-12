@@ -8,6 +8,7 @@
  * The table part of a Listbuilder object
  *}
 
+<div class="table-responsive">
 <table id="{$gridTableId|escape}">
 	{if $columns|@count > 1}{* include column titles as th elements if there is more than one column *}
 		<thead>
@@ -32,3 +33,4 @@
 		<div class="newRow"></div>
 	</tbody>
 </table>
+</div>

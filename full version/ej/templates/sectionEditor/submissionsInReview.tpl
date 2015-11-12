@@ -9,6 +9,7 @@
  *
  *}
 <div id="submissions">
+<div class="table-responsive">
 <table width="100%" class="listing">
 	<tr><td colspan="7" class="headseparator">&nbsp;</td></tr>
 	<tr class="heading" valign="bottom">
@@ -42,6 +43,7 @@
 		<td>{$submission->getAuthorString(true)|truncate:40:"..."|escape}</td>
 		<td><a href="{url op="submissionReview" path=$submission->getId()}" class="action">{$submission->getLocalizedTitle()|strip_tags|truncate:40:"..."}</a></td>
 		<td>
+		<div class="table-responsive">
 		<table width="100%">
 			{foreach from=$submission->getReviewAssignments() item=reviewAssignments}
 				{foreach from=$reviewAssignments item=assignment name=assignmentList}
@@ -61,6 +63,7 @@
 				{/foreach}
 			{/foreach}			
 		</table>
+		</div>
 		</td>
 		<td>
 			{foreach from=$submission->getDecisions() item=decisions}
@@ -92,5 +95,6 @@
 	</tr>
 {/if}
 </table>
+</div>
 </div>
 

@@ -50,6 +50,7 @@
 <div id="subscriptionContact">
 <h3>{translate key="manager.subscriptionPolicies.subscriptionContact"}</h3>
 <p>{translate key="manager.subscriptionPolicies.subscriptionContactDescription"}</p>
+<div class="table-responsive">
 <table width="100%" class="data">
 {if count($formLocales) > 1}
 	<tr valign="top">
@@ -83,6 +84,7 @@
 	</tr>
 </table>
 </div>
+</div>
 
 <div class="separator"></div>
 
@@ -104,6 +106,7 @@
 
 <p>{translate key="manager.subscriptionPolicies.expirySelectOne"}</p>
 
+<div class="table-responsive">
 <table width="100%" class="data">
 	<tr valign="top">
 		<td width="5%" class="label" align="right">
@@ -129,6 +132,7 @@
 		</td>
 	</tr>
 </table>
+</div>
 </div>
 
 <div class="separator"></div>

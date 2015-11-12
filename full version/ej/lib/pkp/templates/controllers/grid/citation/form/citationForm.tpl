@@ -627,6 +627,7 @@
 						</ul>
 
 						<div id="citationImprovementManual" class="pkp_controllers_grid">
+						<div class="table-responsive">
 							<table><tbody>
 								{* Create initial field list which will then be maintained via JS. *}
 								{foreach from=$availableFields name=availableFields key=fieldName item=field}
@@ -642,6 +643,7 @@
 									{/if}
 								{/foreach}
 							</tbody></table>
+							</div>
 
 							{if $hasRequiredField}<p><span class="formRequired">{translate key="common.requiredField"}</span></p>{/if}
 						</div>
@@ -711,6 +713,7 @@
 							{* Tab content *}
 							{foreach from=$citationSourceTabs key=citationSourceTabId item=citationSourceTab}
 								<div id="{$citationSourceTabId}-{$formUid}" class="grid">
+								<div class="table-responsive">
 									<table><tbody>
 										{foreach from=$citationSourceTab.statements key=sourcePropertyId item=sourceStatement}
 											<tr valign="top">
@@ -729,6 +732,7 @@
 											</td>
 										</tr>
 									</tbody></table>
+									</div>
 								</div>
 							{/foreach}
 						</div>

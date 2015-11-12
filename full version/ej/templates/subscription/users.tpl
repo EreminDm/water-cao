@@ -34,6 +34,7 @@
 <p>{foreach from=$alphaList item=letter}<a href="{if $subscriptionId}{url op="selectSubscriber" path=$redirect searchInitial=$letter subscriptionId=$subscriptionId}{else}{url op="selectSubscriber" path=$redirect searchInitial=$letter}{/if}">{if $letter == $searchInitial}<strong>{$letter|escape}</strong>{else}{$letter|escape}{/if}</a> {/foreach}<a href="{if $subscriptionId}{url op="selectSubscriber" path=$redirect subscriptionId=$subscriptionId}{else}{url op="selectSubscriber" path=$redirect}{/if}">{if $searchInitial==''}<strong>{translate key="common.all"}</strong>{else}{translate key="common.all"}{/if}</a></p>
 
 	<div id="users">
+	<div class="table-responsive">
 <table width="100%" class="listing">
 <tr><td colspan="4" class="headseparator">&nbsp;</td></tr>
 <tr class="heading" valign="bottom">
@@ -71,6 +72,7 @@
 	</tr>
 {/if}
 </table>
+</div>
 
 {url|assign:"selectSubscriberUrl" op="selectSubscriber" path=$redirect}
 <a href="{url op="createUser" source=$selectSubscriberUrl}" class="action">{translate key="manager.people.createUser"}</a>

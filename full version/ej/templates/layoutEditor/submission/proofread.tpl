@@ -24,7 +24,7 @@
 {/if}
 
 <a href="{url op="viewMetadata" path=$proofSignoff->getAssocId()}" class="action" target="_new">{translate key="submission.reviewMetadata"}</a>
-
+<div class="table-responsive">
 <table width="100%" class="info">
 	<tr>
 		<td width="40%" colspan="2">&nbsp;</td>
@@ -89,6 +89,7 @@
 		<td colspan="5" class="separator">&nbsp;</td>
 	</tr>
 </table>
+</div>
 
 {translate key="submission.proofread.corrections"}
 {if $submission->getMostRecentProofreadComment()}

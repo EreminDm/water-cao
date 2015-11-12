@@ -20,6 +20,7 @@
 {if count($availableLocales) > 1}
 <form method="post" action="{url op="saveLanguageSettings"}">
 
+<div class="table-responsive">
 <table class="data" width="100%">
 <tr valign="top">
 	<td width="20%" rowspan="2" class="label">{fieldLabel name="primaryLocale" required="true" key="locale.primary"}</td>
@@ -35,6 +36,7 @@
 <tr valign="top">
 	<td class="label" rowspan="2">{fieldLabel suppressId="true" name="supportedLocales" key="locale.supported"}</td>
 	<td colspan="3" class="value">
+	<div class="table-responsive">
 		<table class="data" width="100%">
 		<tr valign="top">
 			<td width="20%">&nbsp;</td>
@@ -53,12 +55,14 @@
 			</tr>
 		{/foreach}
 		</table>
+		</div>
 	</td>
 </tr>
 <tr valign="top">
 	<td colspan="3" class="value"><span class="instruct">{translate key="manager.languages.supportedLocalesInstructions"}</span></td>
 </tr>
 </table>
+</div>
 
 <p><input type="submit" value="{translate key="common.save"}" class="button defaultButton" /> <input type="button" value="{translate key="common.cancel"}" class="button" onclick="document.location.href='{url page="manager"}'" /></p>
 

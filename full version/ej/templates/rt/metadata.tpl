@@ -17,6 +17,7 @@
 
 <br />
 
+<div class="table-responsive">
 <table class="listing" width="100%">
 	<tr><td colspan="4" class="headseparator">&nbsp;</td></tr>
 	<tr valign="top">
@@ -204,6 +205,7 @@
 	</td>
 </tr>
 </table>
+</div>
 
 {include file="rt/footer.tpl"}
 

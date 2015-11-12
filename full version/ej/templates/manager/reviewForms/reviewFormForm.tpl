@@ -28,7 +28,7 @@
 {/if}
 
 {include file="common/formErrors.tpl"}
-
+<div class="table-responsive">
 <table class="data" width="100%">
 {if count($formLocales) > 1}
 	<tr valign="top">
@@ -51,6 +51,7 @@
 	<td class="value"><textarea name="description[{$formLocale|escape}]" rows="4" cols="40" id="description" class="textArea">{$description[$formLocale]|escape}</textarea></td>
 </tr>
 </table>
+</div>
 
 <p><input type="submit" value="{translate key="common.save"}" class="button defaultButton" /> <input type="button" value="{translate key="common.cancel"}" class="button" onclick="document.location.href='{url op="reviewForms" escape=false}'" /></p>
 </form>

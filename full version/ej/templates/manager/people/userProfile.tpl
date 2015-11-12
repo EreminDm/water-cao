@@ -19,6 +19,7 @@
 
 <p><a href="{url op="editUser" path=$user->getId()}" class="action">{translate key="manager.people.editProfile"}</a></p>
 
+<div class="table-responsive">
 <table width="100%" class="data">
 	<tr valign="top">
 		<td width="20%" class="label">{translate key="user.username"}</td>
@@ -119,6 +120,7 @@
 		<td class="value">{$user->getDateLastLogin()|date_format:$datetimeFormatLong}</td>
 	</tr>
 </table>
+</div>
 </div>
 <div class="separator"></div>
 <div id="enrollment>">

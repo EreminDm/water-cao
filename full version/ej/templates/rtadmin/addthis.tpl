@@ -20,6 +20,7 @@
 <div class="separator">&nbsp;</div>
 
 <h3>{translate key="rt.admin.sharing.basic"}</h3>
+<div class="table-responsive">
 <table width="100%" class="data">
 	<tr valign="top">
 		<td class="label" width="20%"></td>
@@ -40,9 +41,11 @@
 		<td><input type="checkbox" name="sharingDropDownMenu" id="sharingDropDownMenu" {if isset($sharingDropDownMenu) && $sharingDropDownMenu} checked="checked" {/if} /> <label for="sharingDropDownMenu">{translate key="rt.admin.sharing.dropDownMenuLabel"}</label></td>
 	</tr>
 </table>
+</div>
 
 <h3>{translate key="rt.admin.sharing.advanced"}</h3>
 <p>{translate key="rt.admin.sharing.customizationLink"}</p>
+<div class="table-responsive">
 <table width="100%" class="data">
 	<tr valign="top">
 		<td class="label" width="20%"><label for="sharingBrand">{translate key="rt.admin.sharing.brandLabel"}</label></td>
@@ -71,6 +74,7 @@
 		<td><input type="text" name="sharingLogoColor" id="sharingLogoColor" value="{$sharingLogoColor|escape}"/></td>
 	</tr>
 </table>
+</div>
 
 <p><input type="submit" value='{translate key="common.save"}' class="button defaultButton" /> 
 <input type="button" value='{translate key="common.cancel"}' class="button" onclick="document.location.href='{url page=rtadmin escape=false}'" />

@@ -31,6 +31,7 @@ $(document).ready(function() { setupTableDND("#subscriptionTypesTable", "moveSub
 <br />
 
 <div id="subscriptionTypes">
+<div class="table-responsive">
 <table width="100%" class="listing" id="subscriptionTypesTable">
 	<tr>
 		<td colspan="5" class="headseparator">&nbsp;</td>
@@ -71,6 +72,7 @@ $(document).ready(function() { setupTableDND("#subscriptionTypesTable", "moveSub
 	</tr>
 {/if}
 </table>
+</div>
 
 <a href="{url op="createSubscriptionType"}" class="action">{translate key="manager.subscriptionTypes.create"}</a>
 </div>

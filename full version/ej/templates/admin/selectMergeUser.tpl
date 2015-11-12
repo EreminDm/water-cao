@@ -71,6 +71,7 @@
 	{assign var="numCols" value=5}
        <form method="post" action="{url}">
 {/if}
+<div class="table-responsive">
 <table width="100%" class="listing">
 	<tr>
 		<td colspan="{$numCols}" class="headseparator">&nbsp;</td>
@@ -129,6 +130,7 @@
 	</tr>
 {/if}
 </table>
+</div>
 {if empty($oldUserIds)}
 	<input type="submit" class="button defaultButton" value="{translate key="admin.mergeUsers"}" />
 	</form>

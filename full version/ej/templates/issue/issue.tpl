@@ -33,6 +33,7 @@
 		{assign var=hasAccess value=0}
 	{/if}
 
+<div class="table-responsive">
 <table class="tocArticle">
 <tr valign="top">
 	<td class="tocArticleCoverImage{if $showCoverPage} showCoverImage{/if}">
@@ -94,6 +95,7 @@
 	</td>
 </tr>
 </table>
+</div>
 {call_hook name="Templates::Issue::Issue::Article"}
 {/foreach}
 

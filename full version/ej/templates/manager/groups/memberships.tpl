@@ -28,6 +28,7 @@ $(document).ready(function() { setupTableDND("#dragTable", {/literal}"{url op=mo
 <br/>
 
 <div id="membership">
+<div class="table-responsive">
 <table width="100%" class="listing" id="dragTable">
 	<tr>
 		<td colspan="2" class="headseparator">&nbsp;</td>
@@ -63,6 +64,7 @@ $(document).ready(function() { setupTableDND("#dragTable", {/literal}"{url op=mo
 	</tr>
 {/if}
 </table>
+</div>
 
 <a href="{url op="addMembership" path=$group->getId()}" class="action">{translate key="manager.groups.membership.addMember"}</a>
 </div>

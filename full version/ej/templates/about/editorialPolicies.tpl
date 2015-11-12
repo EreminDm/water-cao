@@ -58,7 +58,7 @@
 		{/if}
 	{/foreach}
 	{if $hasEditors}</ul>{/if}
-
+<div class="table-responsive">
 	<table class="plain" width="60%">
 		<tr>
 			<td width="33%">{if !$section->getEditorRestricted()}{icon name="checked"}{else}{icon name="unchecked"}{/if} {translate key="manager.sections.open"}</td>
@@ -66,6 +66,7 @@
 			<td width="34%">{if $section->getMetaReviewed()}{icon name="checked"}{else}{icon name="unchecked"}{/if} {translate key="manager.sections.reviewed"}</td>
 		</tr>
 	</table>
+	</div>
 {/if}{/foreach}
 </div>
 

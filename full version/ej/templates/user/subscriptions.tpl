@@ -40,6 +40,7 @@
 {if $journalPaymentsEnabled && $acceptSubscriptionPayments}
 <h3>{translate key="user.subscriptions.subscriptionStatus"}</h3>
 <p>{translate key="user.subscriptions.statusInformation"}</p>
+<div class="table-responsive">
 <table width="100%" class="listing">
 	<tr>
 		<td colspan="2" class="headseparator">&nbsp;</td>
@@ -71,11 +72,13 @@
 		<td colspan="2" class="headseparator">&nbsp;</td>
 	</tr>
 </table>
+</div>
 {/if}
 
 {if $individualSubscriptionTypesExist}
 	<h3>{translate key="user.subscriptions.individualSubscriptions"}</h3>
 	<p>{translate key="subscriptions.individualDescription"}</p>
+	<div class="table-responsive">
 	<table width="100%" class="info">
 	{if $userIndividualSubscription}
 		<tr valign="top">
@@ -124,11 +127,13 @@
 		</tr>
 	{/if}
 	</table>
+	</div>
 {/if}
 
 {if $institutionalSubscriptionTypesExist}
 	<h3>{translate key="user.subscriptions.institutionalSubscriptions"}</h3>
 	<p>{translate key="subscriptions.institutionalDescription"}{if $journalPaymentsEnabled && $acceptSubscriptionPayments} {translate key="subscriptions.institutionalOnlinePaymentDescription"}{/if}</p>
+	<div class="table-responsive">
 	<table width="100%" class="info">
 	{if $userInstitutionalSubscriptions}
 		{iterate from=userInstitutionalSubscriptions item=userInstitutionalSubscription}
@@ -183,6 +188,7 @@
 		</tr>
 	{/if}
 	</table>
+	</div>
 {/if}
 
 {include file="common/footer.tpl"}

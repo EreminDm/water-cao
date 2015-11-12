@@ -16,6 +16,7 @@
 <form id="settings" method="post" action="{url op="saveSettings"}" enctype="multipart/form-data">
 {include file="common/formErrors.tpl"}
 
+<div class="table-responsive">
 <table class="data" width="100%">
 {if count($formLocales) > 1}
 	<tr valign="top">
@@ -151,6 +152,7 @@
 		</td>
 	</tr>
 </table>
+</div>
 
 <br />
 <div id="oaiRegistration">
@@ -166,6 +168,7 @@
 	<div id="defaultMetricSelection">
 		<h4>{translate key="defaultMetric.title"}</h4>
 		<p>{translate key="admin.settings.defaultMetricDescription"}</p>
+		<div class="table-responsive">
 		<table class="data" width="100%">
 			<tr valign="top">
 				<td width="20%" class="label">{fieldLabel name="defaultMetricType" key="defaultMetric.availableMetrics"}</td>
@@ -178,6 +181,7 @@
 				</td>
 			</tr>
 		</table>
+		</div>
 	</div>
 {/if}
 

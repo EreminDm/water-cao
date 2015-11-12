@@ -20,6 +20,7 @@
 
 <a name="issues"></a>
 
+<div class="table-responsive">
 <table width="100%" class="listing">
 	<tr>
 		<td colspan="5" class="headseparator">&nbsp;</td>
@@ -59,6 +60,7 @@
 	</tr>
 {/if}
 </table>
+</div>
 
 {include file="common/footer.tpl"}
 

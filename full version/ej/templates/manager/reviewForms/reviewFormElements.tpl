@@ -47,6 +47,7 @@ function toggleChecked() {
 
 <div id="reviewFormElements">
 <form id="reviewFormElements" action="{url op="copyReviewFormElement"}" method="post">
+<div class="table-responsive">
 <table width="100%" class="listing" id="reviewFormElementsTable">
 	<tr>
 		<td class="headseparator" colspan="3">&nbsp;</td>
@@ -88,6 +89,7 @@ function toggleChecked() {
 {/if}
 
 </table>
+</div>
 
 {if $reviewFormElementExists}
 	<p>{translate key="manager.reviewFormElements.copyTo"}&nbsp;<select name="targetReviewForm" class="selectMenu" size="1">{html_options options=$unusedReviewFormTitles}</select>&nbsp;<input type="submit" value="{translate key="common.copy"}" class="button defaultButton"/>&nbsp;<input type="button" value="{translate key="common.selectAll"}" class="button" onclick="toggleChecked()" /></p>

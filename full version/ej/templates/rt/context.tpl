@@ -76,6 +76,7 @@
 
 <p>{if $context->getDefineTerms()}{translate key="rt.context.defineTermsDescription"}{elseif $context->getAuthorTerms()}{translate key="rt.context.authorTermsDescription"}{elseif $context->getCitedBy()}{translate key="rt.context.citesContextDescription}{else}{translate key="rt.context.searchDescription"}{/if}</p>
 
+<div class="table-responsive">
 <table class="data" width="100%">
 	<form id="terms">
 	{if $context->getDefineTerms()}
@@ -129,9 +130,11 @@
 	{/foreach}
 	</form>
 </table>
+</div>
 
 <div class="separator"></div>
 
+<div class="table-responsive">
 <table class="listing" width="100%">
 	{foreach from=$searches item=search key=key name=searches}
 	<form id="search{$key+1}form" method="{if $search->getSearchPost()}post{else}get{/if}" action="{$search->getSearchUrl()|escape}">
@@ -149,6 +152,7 @@
 	</form>
 	{/foreach}
 </table>
+</div>
 
 <a href="http://pkp.sfu.ca/ojs/suggestRt" target="_new" class="action">{translate key="rt.search.suggest"}</a><br/>
 </div>

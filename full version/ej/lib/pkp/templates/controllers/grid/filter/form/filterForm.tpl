@@ -64,6 +64,7 @@
 				</script>{/literal}
 
 				{assign var=hasRequiredField value=false}
+				<div class="table-responsive">
 				<table>
 					{foreach from=$filterSettings item=filterSetting}
 						{if $filterSetting->getRequired() == $smarty.const.FORM_VALIDATOR_REQUIRED_VALUE}
@@ -91,6 +92,7 @@
 						</tr>
 					{/foreach}
 				</table>
+				</div>
 				{if $hasRequiredField}<p><span class="formRequired">{translate key="common.requiredField"}</span></p>{/if}
 
 				{if $filterId}<input type="hidden" name="filterId" value="{$filterId|escape}" />{/if}

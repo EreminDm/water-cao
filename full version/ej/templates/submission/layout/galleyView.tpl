@@ -16,6 +16,7 @@
 
 <p>{translate key="submission.layout.galleyFileData"}</p>
 
+<div class="table-responsive">
 <table class="data">
 <tr valign="top">
 	<td width="20%" class="label">{translate key="submission.layout.galleyLabel"}</td>
@@ -43,12 +44,14 @@
 </tr>
 </table>
 </div>
+</div>
 {if $galley->isHTMLGalley()}
 <div id="htmlGalley">
 
 <h3>{translate key="submission.layout.galleyHTMLData"}</h3>
 {assign var=styleFile value=$galley->getStyleFile()}
 
+<div class="table-responsive">
 <table class="data" width="100%">
 <tr valign="top">
 	<td colspan="2" class="label"><strong>{translate key="submission.layout.galleyStylesheet"}</strong></td>
@@ -73,10 +76,12 @@
 {/if}
 </table>
 </div>
+</div>
 <div id="galleyImages">
 
 <strong>{translate key="submission.layout.galleyImages"}</strong>
 
+<div class="table-responsive">
 <table class="listing" width="100%">
 <tr><td colspan="4" class="headseparator">&nbsp;</td></tr>
 <tr class="heading" valign="bottom">
@@ -105,6 +110,7 @@
 </tr>
 {/foreach}
 </table>
+</div>
 </div>
 {/if}
 

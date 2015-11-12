@@ -21,6 +21,7 @@ $(document).ready(function() { setupTableDND("#adminJournals", "moveJournal"); }
 <br />
 
 <div id="journals">
+<div class="table-responsive">
 <table width="100%" class="listing" id="adminJournals">
 	<tr>
 		<td colspan="4" class="headseparator">&nbsp;</td>
@@ -59,6 +60,7 @@ $(document).ready(function() { setupTableDND("#adminJournals", "moveJournal"); }
 		</tr>
 	{/if}
 </table>
+</div>
 </div>
 <p><a href="{url op="createJournal"}" class="action">{translate key="admin.journals.create"}</a></p>
 

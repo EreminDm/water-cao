@@ -10,6 +10,7 @@
  *}
 <div id="submission">
 <h3>{translate key="article.submission"}</h3>
+<div class="table-responsive">
 <table width="100%" class="data">
 	<tr valign="top">
 		<td width="20%" class="label">{translate key="article.authors"}</td>
@@ -97,5 +98,6 @@
 	</tr>
 	{/if}
 </table>
+</div>
 </div>
 

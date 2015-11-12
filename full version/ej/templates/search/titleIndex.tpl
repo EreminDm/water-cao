@@ -22,6 +22,7 @@
 {/if}
 
 <div id="results">
+<div class="table-responsive">
 <table width="100%" class="listing">
 <tr><td colspan="{$numCols|escape}" class="headseparator">&nbsp;</td></tr>
 <tr class="heading" valign="bottom">
@@ -72,6 +73,7 @@
 	</tr>
 {/if}
 </table>
+</div>
 </div>
 {include file="common/footer.tpl"}
 

@@ -24,6 +24,7 @@
 <div id="giftBuyer">
 <h3>{translate key="gifts.buyer"}</h3>
 <p>{translate key="gifts.buyerDescription"}</p>
+<div class="table-responsive">
 <table class="data" width="100%">
 <tr valign="top">
 	<td width="20%" class="label">{fieldLabel name="buyerFirstName" required="true" key="user.firstName"}</td>
@@ -51,12 +52,14 @@
 </tr>
 </table>
 </div>
+</div>
 
 <div class="separator"></div>
 
 <div id="giftRecipient">
 <h3>{translate key="gifts.recipient"}</h3>
 <p>{translate key="gifts.recipientDescription"}</p>
+<div class="table-responsive">
 <table class="data" width="100%">
 <tr valign="top">
 	<td width="20%" class="label">{fieldLabel name="recipientFirstName" required="true" key="user.firstName"}</td>
@@ -84,12 +87,14 @@
 </tr>
 </table>
 </div>
+</div>
 
 <div class="separator"></div>
 
 <div id="giftDetails">
 <h3>{translate key="gifts.details"}</h3>
 <p>{translate key="gifts.detailsDescription"}</p>
+<div class="table-responsive">
 <table class="data" width="100%">
 <tr valign="top">
 	<td width="20%" class="label">{fieldLabel name="typeId" required="true" key="gifts.gift"}</td>
@@ -116,6 +121,7 @@
 	<td class="value"><textarea name="giftNote" id="giftNote" rows="5" cols="60" class="textArea">{$giftNote|escape}</textarea></td>
 </tr>
 </table>
+</div>
 
 <p><input type="submit" value="{translate key="common.continue"}" class="button defaultButton" /> <input type="button" value="{translate key="common.cancel"}" class="button" onclick="document.location.href='{url page="index" escape=false}'" /></p>
 

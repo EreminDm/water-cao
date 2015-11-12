@@ -20,6 +20,7 @@
 {include file="common/formErrors.tpl"}
 <div id="galleyFileData">
 <p>{translate key="submission.layout.galleyFileData"}</p>
+<div class="table-responsive">
 <table class="data" width="100%">
 <tr valign="top">
 	<td width="20%" class="label">{fieldLabel name="label" required="true" key="submission.layout.galleyLabel"}</td>
@@ -82,6 +83,7 @@
 {/if}
 </table>
 </div>
+</div>
 <br/>
 
 {foreach from=$pubIdPlugins item=pubIdPlugin}
@@ -99,6 +101,7 @@
 
 {assign var=styleFile value=$galley->getStyleFile()}
 
+<div class="table-responsive">
 <table class="data" width="100%">
 {if $styleFile}
 <tr valign="top">
@@ -126,6 +129,7 @@
 </tr>
 {/if}
 </table>
+</div>
 
 <table class="data" width="100%">
 <tr valign="top">
@@ -140,6 +144,7 @@
 <div id="galleyImages">
 <h4>{translate key="submission.layout.galleyImages"}</h4>
 
+<div class="table-responsive">
 <table width="100%" class="listing">
 <tr><td colspan="6" class="headseparator">&nbsp;</td></tr>
 <tr class="heading" valign="bottom">
@@ -170,6 +175,7 @@
 </tr>
 {/foreach}
 </table>
+</div>
 
 <input type="file" name="imageFile" id="imageFile" class="uploadField" />&nbsp;
 <input type="submit" name="uploadImage" class="button" value="{translate key="common.upload"}" />

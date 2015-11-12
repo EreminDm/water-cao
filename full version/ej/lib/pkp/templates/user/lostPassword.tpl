@@ -23,12 +23,14 @@
 	<p><span class="pkp_form_error">{translate key="$error"}</span></p>
 {/if}
 
+<div class="table-responsive">
 <table id="lostPasswordTable" class="data" width="100%">
 <tr valign="top">
 	<td class="label" width="25%">{translate key="user.login.registeredEmail"}</td>
 	<td class="value" width="75%"><input type="text" name="email" value="{$username|escape}" size="30" maxlength="90" class="textField" /></td>
 </tr>
 </table>
+</div>
 
 <p><input type="submit" value="{translate key="user.login.resetPassword"}" class="button defaultButton" /></p>
 

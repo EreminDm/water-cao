@@ -8,6 +8,7 @@
  * Display a single notification.
  *}
 
+<div class="table-responsive">
 <table width="100%" class="notifications">
 	<tr>
 		<td width="25"><div class="notifyIcon {$notificationIconClass|escape}">&nbsp;</div></td>
@@ -30,3 +31,4 @@
 		</td>
 	</tr>
 </table>
+</div>

@@ -12,6 +12,7 @@
 <div id="regretsAndCancels">
 <h3>{translate|escape key="sectionEditor.regrets.regretsAndCancels"}</h3>
 
+<div class="table-responsive">
 <table width="100%" class="listing">
 	<tr><td colspan="4" class="headseparator">&nbsp;</td></tr>
 	<tr valign="top">
@@ -53,6 +54,7 @@
 {/foreach}
 </table>
 </div>
+</div>
 {section name=round loop=$numRounds-1}
 {assign var=round value=$smarty.section.round.index}
 {assign var=roundPlusOne value=$round+1}
@@ -61,6 +63,7 @@
 <div id="reviewRound">
 <h3>{translate key="sectionEditor.regrets.reviewRound" round=$roundPlusOne}</h3>
 
+<div class="table-responsive">
 <table width="100%" class="data">
 	<tr valign="top">
 		<td class="label" width="20%">{translate key="submission.reviewVersion"}</td>
@@ -75,6 +78,7 @@
 	</tr>
 </table>
 </div>
+</div>
 {assign var="start" value="A"|ord}
 {assign var=reviewKey value=0}
 
@@ -86,6 +90,7 @@
 <div id="reviewer">
 <h4>{translate key="user.role.reviewer"} {$reviewKey+$start|chr} {$reviewAssignment->getReviewerFullName()|escape}</h4>
 
+<div class="table-responsive">
 <table width="100%" class="listing">
 	<tr valign="top">
 		<td width="20%">{translate key="reviewer.article.schedule"}</td>
@@ -158,6 +163,7 @@
 	<tr valign="top">
 		<td class="label">{translate key="reviewer.article.uploadedFile"}</td>
 		<td colspan="4">
+		<div class="table-responsive">
 			<table width="100%" class="data">
 				{foreach from=$reviewAssignment->getReviewerFileRevisions() item=reviewerFile key=key}
 				<tr valign="top">
@@ -180,9 +186,11 @@ name="viewable" value="1"{if $reviewerFile->getViewable()} checked="checked"{/if
 				</tr>
 				{/foreach}
 			</table>
+			</div>
 		</td>
 	</tr>
 </table>
+</div>
 {/if}
 {assign var=reviewKey value=$reviewKey+1}
 {/foreach}
@@ -194,6 +202,7 @@ name="viewable" value="1"{if $reviewerFile->getViewable()} checked="checked"{/if
 {assign var=authorFiles value=$submission->getAuthorFileRevisions($roundPlusOne)}
 {assign var=editorFiles value=$submission->getEditorFileRevisions($roundPlusOne)}
 
+<div class="table-responsive">
 <table class="data" width="100%">
 	<tr valign="top">
 		<td class="label" width="20%">{translate key="editor.article.decision"}</td>
@@ -249,6 +258,7 @@ name="viewable" value="1"{if $reviewerFile->getViewable()} checked="checked"{/if
 		</tr>
 	{/foreach}
 </table>
+</div>
 </div>
 <div class="separator"></div>
 

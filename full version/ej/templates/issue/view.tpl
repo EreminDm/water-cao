@@ -41,6 +41,7 @@
 		{else}
 			{assign var=hasAccess value=0}
 		{/if}
+		<div class="table-responsive">
 		<table class="tocArticle" width="100%">
 		<tr valign="top">
 			<td class="tocTitle">{translate key="issue.viewIssueDescription"}</td>
@@ -71,6 +72,7 @@
 			</td>
 		</tr>
 		</table>
+		</div>
 		<br />
 	{/if}
 	<h3>{translate key="issue.toc"}</h3>

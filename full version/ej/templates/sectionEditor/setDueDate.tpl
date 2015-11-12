@@ -18,6 +18,7 @@
 <p>{translate key="editor.article.designateDueDateDescription"}</p>
 
 <form method="post" action="{url op=$actionHandler path=$articleId|to_array:$reviewId}">
+<div class="table-responsive">
 	<table class="data" width="100%">
 		<tr valign="top">
 			<td class="label" width="20%">{translate key="editor.article.todaysDate"}</td>
@@ -39,6 +40,7 @@
 			<td class="value"><input type="text" name="numWeeks" value="{if not $dueDate}{$numWeeksPerReview|escape}{/if}" size="3" maxlength="2" class="textField" onfocus="this.form.dueDate.value=''" /></td>
 		</tr>
 	</table>
+	</div>
 <p><input type="submit" value="{translate key="common.continue"}" class="button defaultButton" /> <input type="button" class="button" onclick="history.go(-1)" value="{translate key="common.cancel"}" /></p>
 </form>
 </div>

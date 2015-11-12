@@ -22,6 +22,7 @@ window.opener.location.reload();
 {/literal}
 </script>
 <div id="articleComments">
+<div class="table-responsive">
 <table class="data" width="100%">
 {foreach from=$articleComments item=comment}
 <tr valign="top">
@@ -64,6 +65,7 @@ window.opener.location.reload();
 {/foreach}
 </table>
 </div>
+</div>
 <br />
 <br />
 
@@ -79,6 +81,7 @@ window.opener.location.reload();
 <div id="new">
 {include file="common/formErrors.tpl"}
 
+<div class="table-responsive">
 <table class="data" width="100%">
 <tr valign="top">
 	<td class="label">{fieldLabel name="commentTitle" key="submission.comments.subject"}</td>
@@ -93,6 +96,7 @@ window.opener.location.reload();
 	<td class="value"><textarea id="comments" name="comments" rows="10" cols="50" class="textArea">{$comments|escape}</textarea></td>
 </tr>
 </table>
+</div>
 
 <p><input type="submit" name="save" value="{translate key="common.save"}" class="button defaultButton" /> <input type="button" value="{translate key="common.close"}" class="button" onclick="window.close()" /></p>
 

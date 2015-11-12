@@ -14,6 +14,7 @@
 {assign var=authorFiles value=$submission->getAuthorFileRevisions($submission->getCurrentRound())}
 {assign var=editorFiles value=$submission->getEditorFileRevisions($submission->getCurrentRound())}
 
+<div class="table-responsive">
 <table width="100%" class="data">
 	<tr valign="top">
 		<td class="label">{translate key="editor.article.decision"}</td>
@@ -82,4 +83,5 @@
 		</td>
 	</tr>
 </table>
+</div>
 </div>

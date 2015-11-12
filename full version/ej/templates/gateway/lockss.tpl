@@ -56,7 +56,7 @@
 <h3>Metadata</h3>
 
 <p>Metadata associated with this Archival Unit includes:</p>
-
+<div class="table-responsive">
 <table width="100%" class="data">
 <tr valign="top">
 	<td width="20%" class="label">Journal URL</td>
@@ -99,6 +99,7 @@
 </tr>
 {/if}
 </table>
+</div>
 {/if}
 
 {/if}

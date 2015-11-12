@@ -19,6 +19,7 @@
 
 <form method="post" action="{url op="enrollSync"}">
 
+<div class="table-responsive">
 <table class="data" width="100%">
 	<tr valign="top">
 		<td width="20%" class="label"><label for="rolePath">{translate key="manager.people.enrollSyncRole"}</label></td>
@@ -55,6 +56,7 @@
 		</td>
 	</tr>
 </table>
+</div>
 
 <p><input type="submit" value="{translate key="manager.people.enrollSync"}" class="button defaultButton" /> <input type="button" value="{translate key="common.cancel"}" class="button" onclick="history.go(-1)" /></p>
 

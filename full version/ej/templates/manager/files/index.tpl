@@ -20,6 +20,7 @@
 <p><a href="{url op="files" path=$parentDir|explode:"/"}" class="action">&lt; {translate key="manager.files.parentDir"}</a></p>
 {/if}
 
+<div class="table-responsive">
 <table width="100%" class="listing">
 	<tr>
 		<td class="headseparator" colspan="6">&nbsp;</td>
@@ -67,6 +68,7 @@
 	</tr>
 {/foreach}
 </table>
+</div>
 
 <form method="post" action="{url op="fileUpload" path=$currentDir|explode:"/"}" enctype="multipart/form-data">
 	<input type="file" size="20" name="file" class="uploadField" />

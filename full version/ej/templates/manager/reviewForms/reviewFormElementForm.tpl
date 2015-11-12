@@ -38,6 +38,7 @@ function togglePossibleResponses(newValue, multipleResponsesElementTypesString) 
 
 {include file="common/formErrors.tpl"}
 
+<div class="table-responsive">
 <table class="data" width="100%">
 {if count($formLocales) > 1}
 	<tr valign="top">
@@ -82,6 +83,7 @@ function togglePossibleResponses(newValue, multipleResponsesElementTypesString) 
 		{foreach name=responses from=$possibleResponses[$formLocale] key=responseId item=responseItem}
 			{if !$notFirstResponseItem}
 				{assign var=notFirstResponseItem value=1}
+				<div class="table-responsive">
 				<table width="100%" class="data">
 				<tr valign="top">
 					<td width="5%">{translate key="common.order"}</td>
@@ -97,12 +99,14 @@ function togglePossibleResponses(newValue, multipleResponsesElementTypesString) 
 
 		{if $notFirstResponseItem}
 				</table>
+				</div>
 		{/if}
 		<br/>
 		<input type="submit" name="addResponse" value="{translate key="manager.reviewFormElements.addResponseItem"}" class="button" {if not in_array($elementType, $multipleResponsesElementTypes)}disabled="disabled"{/if}/>
 	</td>
 </tr>
 </table>
+</div>
 
 <p><input type="submit" value="{translate key="common.save"}" class="button defaultButton" /> <input type="button" value="{translate key="common.cancel"}" class="button" onclick="document.location.href='{url op="reviewFormElements" path=$reviewFormId escape=false}'" /></p>
 </form>

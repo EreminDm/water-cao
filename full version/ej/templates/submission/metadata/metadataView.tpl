@@ -17,6 +17,7 @@
 <div id="authors">
 <h3>{translate key="article.authors"}</h3>
 	
+	<div class="table-responsive">
 <table width="100%" class="data">
 	{foreach name=authors from=$authors key=authorIndex item=author}
 	<tr valign="top">
@@ -60,6 +61,7 @@
 	{/foreach}
 </table>
 </div>
+</div>
 
 <div class="separator"></div>
 {/if}
@@ -67,6 +69,7 @@
 <div id="titleAndAbstract">
 <h3>{translate key="submission.titleAndAbstract"}</h3>
 
+<div class="table-responsive">
 <table width="100%" class="data">
 	<tr valign="top">
 		<td width="20%" class="label">{translate key="article.title"}</td>
@@ -82,10 +85,12 @@
 	</tr>
 </table>
 </div>
+</div>
 <div class="separator"></div>
 <div id="cover">
 <h3>{translate key="editor.article.cover"}</h3>
 
+<div class="table-responsive">
 <table width="100%" class="data">
 	<tr valign="top">
 		<td width="20%" class="label">{fieldLabel name="coverPage" key="editor.article.coverPage"}</td>
@@ -101,10 +106,12 @@
 	</tr>
 </table>
 </div>
+</div>
 <div class="separator"></div>
 <div id="indexing">
 <h3>{translate key="submission.indexing"}</h3>
 	
+	<div class="table-responsive">
 <table width="100%" class="data">
 	{if $currentJournal->getSetting('metaDiscipline')}
 	<tr valign="top">
@@ -173,6 +180,7 @@
 		<td width="80%" class="value">{$language|escape|default:"&mdash;"}</td>
 	</tr>
 </table>
+</div>
 </div>
 
 <div class="separator"></div>

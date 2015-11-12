@@ -17,6 +17,7 @@
 
 {if $useLayoutEditors}
 <div id="layoutEditors">
+<div class="table-responsive">
 <table width="100%" class="data">
 	<tr>
 		<td class="label" width="20%">{translate key="user.role.layoutEditor"}</td>
@@ -24,8 +25,10 @@
 	</tr>
 </table>
 </div>
+</div>
 {/if}
 
+<div class="table-responsive">
 <table width="100%" class="info">
 	{if $useLayoutEditors}
 	<tr>
@@ -96,6 +99,7 @@
 		<td colspan="6" class="separator">&nbsp;</td>
 	</tr>
 </table>
+</div>
 
 <div id="layoutComments">
 {translate key="submission.layout.layoutComments"}

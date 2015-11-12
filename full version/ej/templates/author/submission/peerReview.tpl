@@ -20,6 +20,7 @@
 
 <h4>{translate key="submission.round" round=$round}</h4>
 
+<div class="table-responsive">
 <table class="data" width="100%">
 	<tr valign="top">
 		<td class="label" width="20%">
@@ -104,6 +105,7 @@
 		</tr>
 	{/if}
 </table>
+</div>
 
 {if !$smarty.section.round.last}
 	<div class="separator"></div>

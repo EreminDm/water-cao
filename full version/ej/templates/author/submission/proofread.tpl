@@ -15,16 +15,19 @@
 <h3>{translate key="submission.proofreading"}</h3>
 
 {if $useProofreaders}
+<div class="table-responsive">
 <table width="100%" class="data">
 	<tr>
 		<td class="label" width="20%">{translate key="user.role.proofreader"}</td>
 		<td class="value" width="80%">{if $proofSignoff->getUserId()}{$proofreader->getFullName()|escape}{else}{translate key="common.none"}{/if}</td>
 	</tr>
 </table>
+</div>
 {/if}
 
 <a href="{url op="viewMetadata" path=$proofSignoff->getAssocId()}" class="action" target="_new">{translate key="submission.reviewMetadata"}</a>
 
+<div class="table-responsive">
 <table width="100%" class="info">
 	<tr>
 		<td width="40%" colspan="2">&nbsp;</td>
@@ -69,6 +72,7 @@
 		<td colspan="5" class="separator">&nbsp;</td>
 	</tr>
 </table>
+</div>
 
 {translate key="submission.proofread.corrections"}
 {if $submission->getMostRecentProofreadComment()}

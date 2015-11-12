@@ -35,6 +35,7 @@ $(document).ready(function() { setupTableDND("#dragTable", "moveGroup"); });
 
 <div id="groups">
 
+<div class="table-responsive">
 <table width="100%" class="listing" id="dragTable">
 	<tr>
 		<td colspan="3" class="headseparator">&nbsp;</td>
@@ -93,6 +94,7 @@ $(document).ready(function() { setupTableDND("#dragTable", "moveGroup"); });
 	</tr>
 {/if}
 </table>
+</div>
 
 <a href="{url op="createGroup"}" class="action">{translate key="manager.groups.create"}</a>
 </div>

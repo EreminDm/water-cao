@@ -12,6 +12,7 @@
 <h3>{translate key="user.role.editors"}</h3>
 <form action="{url page="editor" op="setEditorFlags"}" method="post">
 <input type="hidden" name="articleId" value="{$submission->getId()}"/>
+<div class="table-responsive">
 <table width="100%" class="listing">
 	<tr class="heading" valign="bottom">
 		<td width="{if $isEditor}20%{else}25%{/if}">&nbsp;</td>
@@ -68,6 +69,7 @@
 		<tr><td colspan="{if $isEditor}6{else}5{/if}" class="nodata">{translate key="common.noneAssigned"}</td></tr>
 	{/foreach}
 </table>
+</div>
 {if $isEditor}
 	<input type="submit" class="button defaultButton" value="{translate key="common.record"}"/>&nbsp;&nbsp;
 	<a href="{url page="editor" op="assignEditor" path="sectionEditor" articleId=$submission->getId()}" class="action">{translate key="editor.article.assignSectionEditor"}</a>

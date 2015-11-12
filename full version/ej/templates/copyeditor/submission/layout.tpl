@@ -25,6 +25,7 @@
 </div>
 {/if}
 
+<div class="table-responsive">
 <table width="100%" class="info">
 	<tr>
 		<td width="40%" colspan="2">{translate key="submission.layout.galleyFormat"}</td>
@@ -63,7 +64,7 @@
 		<td colspan="3" class="separator">&nbsp;</td>
 	</tr>
 </table>
-
+</div>
 <div id="layoutComments">
 {translate key="submission.layout.layoutComments"}
 {if $submission->getMostRecentLayoutComment()}

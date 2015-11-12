@@ -30,6 +30,7 @@
 
 <div id="users">
 <form action="{url op="enroll" path=$articleId}" method="post">
+<div class="table-responsive">
 <table width="100%" class="listing">
 <tr><td colspan="5" class="headseparator">&nbsp;</td></tr>
 <tr class="heading" valign="bottom">
@@ -64,6 +65,7 @@
 	</tr>
 {/if}
 </table>
+</div>
 </div>
 <input type="submit" value="{translate key="manager.people.enrollSelected"}" class="button defaultButton" /> <input type="button" value="{translate key="common.cancel"}" class="button" onclick="document.location.href='{url page="manager" escape=false}'" />
 

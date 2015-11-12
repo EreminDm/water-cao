@@ -60,6 +60,7 @@ function sortSearch(heading, direction) {
 </div>
 
 <div id="submissions">
+<div class="table-responsive">
 <table width="100%" class="listing">
 	<tr><td colspan="7" class="headseparator">&nbsp;</td></tr>
 	<tr class="heading" valign="bottom">
@@ -114,5 +115,6 @@ function sortSearch(heading, direction) {
 	</tr>
 {/if}
 </table>
+</div>
 </div>
 

@@ -42,6 +42,7 @@
 {/literal}
 </script>
 <div id="createReviewerForm">
+<div class="table-responsive">
 <table width="100%" class="data">
 {if count($formLocales) > 1}
 	<tr valign="top">
@@ -156,6 +157,7 @@
 	</tr>
 	{/if}
 </table>
+</div>
 
 <p><input type="submit" value="{translate key="common.save"}" class="button defaultButton" /> <input type="button" value="{translate key="common.cancel"}" class="button" onclick="document.location.href='{url op="selectReviewer" path=$articleId escape=false}'" /></p>
 

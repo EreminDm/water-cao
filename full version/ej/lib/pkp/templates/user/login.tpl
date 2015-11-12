@@ -41,6 +41,7 @@
 <input type="hidden" name="source" value="{$source|strip_unsafe_html|escape}" />
 
 {if ! $implicitAuth}
+<div class="table-responsive">
 	<table id="signinTable" class="data">
 	<tr>
 		<td class="label"><label for="loginUsername">{translate key="user.username"}</label></td>
@@ -62,6 +63,7 @@
 		<td><input type="submit" value="{translate key="user.login"}" class="button" /></td>
 	</tr>
 	</table>
+	</div>
 
 	<p>
 		{if !$hideRegisterLink}&#187; <a href="{url page="user" op=$registerOp}">{translate key=$registerLocaleKey}</a><br />{/if}

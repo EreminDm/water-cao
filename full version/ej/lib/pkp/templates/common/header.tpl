@@ -32,6 +32,7 @@
 	<link rel="stylesheet" href="{$baseUrl}/styles/common.css" type="text/css" />
 	<link rel="stylesheet" href="{$baseUrl}/styles/compiled.css" type="text/css" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="{$baseUrl}/public/journals/1/journalStyleSheet.css" type="text/css" />
 	<script type="text/javascript" src="{$baseUrl}/public/journals/1/hamburger.js"></script>
 
 

@@ -32,6 +32,7 @@
 
 <form id="notificationSettings" method="post" action="{url op="saveSubscribeMailList"}">
 
+<div class="table-responsive">
 <table class="data" width="100%">
 	<tr valign="top">
 		<td class="label" width="5%">{fieldLabel name="email" key="user.email"}</td>
@@ -64,6 +65,7 @@
 		<td><p><input type="submit" value="{translate key="form.submit"}" class="button defaultButton" /></p></td>
 	</tr>
 </table>
+</div>
 </form>
 <h5 style="margin-left:10%">{translate key="notification.mailList.register"}</h5>
 <ul class="plain" style="margin-left:10%">

@@ -20,6 +20,7 @@
 <form method="post" action="{url op="enterReviewerRecommendation"}">
 <input type="hidden" name="articleId" value="{$articleId|escape}" />
 <input type="hidden" name="reviewId" value="{$reviewId|escape}" />
+<div class="table-responsive">
 <table width="100%" class="data">
 <tr valign="top">
 	<td width="20%" class="label">{translate key="editor.article.recommendation"}</td>
@@ -30,6 +31,7 @@
 	</td>
 </tr>
 </table>
+</div>
 <p><input type="submit" value="{translate key="common.save"}" class="button defaultButton" /> <input type="button" value="{translate key="common.cancel"}" class="button" onclick="document.location.href='{url op="submissionReview" path=$articleId escape=false}';"/></p>
 </form>
 </div>

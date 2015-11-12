@@ -17,6 +17,7 @@
 
 {foreach from=$article->getSuppFiles() item=suppFile key=key}
 <h4>{$key+1}. {$suppFile->getSuppFileTitle()|escape}</h4>
+<div class="table-responsive">
 <table class="data" width="100%">
 <tr valign="top">
 	<td class="label" width="20%">{translate key="common.subject"}</td>
@@ -43,6 +44,7 @@
 	</td>
 </tr>
 </table>
+</div>
 
 {/foreach}
 

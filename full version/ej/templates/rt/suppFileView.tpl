@@ -21,6 +21,7 @@
 <div id="supplementarFileData">
 <h3>{translate key="author.submit.supplementaryFileData"}</h3>
 
+<div class="table-responsive">
 <table width="100%" class="data">
 	<tr valign="top">
 		<td width="20%" class="label">{translate key="common.title"}</td>
@@ -77,12 +78,14 @@
 	{/foreach}
 </table>
 </div>
+</div>
 
 <div class="separator"></div>
 
 <div id="supplementaryFileUpload">
 <h3>{translate key="author.submit.supplementaryFileUpload"}</h3>
 
+<div class="table-responsive">
 <table width="100%" class="data">
 {if $suppFile}
 {if $suppFile->getRemoteURL()}
@@ -108,6 +111,7 @@
 		<td class="value">{$suppFile->getDateUploaded()|date_format:$datetimeFormatShort}</td>
 	</tr>
 	</table>
+	</div>
 {/if}
 {else}
 	<tr valign="top">
@@ -115,6 +119,7 @@
 	</tr>
 {/if}
 </table>
+</div>
 </div>
 </div>
 

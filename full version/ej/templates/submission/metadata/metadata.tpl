@@ -18,6 +18,7 @@
 <div id="authors">
 <h4>{translate key="article.authors"}</h4>
 	
+	<div class="table-responsive">
 <table width="100%" class="data">
 	{foreach name=authors from=$submission->getAuthors() item=author}
 	<tr valign="top">
@@ -74,10 +75,11 @@
 	{/foreach}
 </table>
 </div>
+</div>
 
 <div id="titleAndAbstract">
 <h4>{translate key="submission.titleAndAbstract"}</h4>
-
+<div class="table-responsive">
 <table width="100%" class="data">
 	<tr valign="top">
 		<td width="20%" class="label">{translate key="article.title"}</td>
@@ -93,10 +95,12 @@
 	</tr>
 </table>
 </div>
+</div>
 
 <div id="indexing">
 <h4>{translate key="submission.indexing"}</h4>
 	
+	<div class="table-responsive">
 <table width="100%" class="data">
 	{if $currentJournal->getSetting('metaDiscipline')}
 		<tr valign="top">
@@ -162,6 +166,7 @@
 		<td width="80%" class="value">{$submission->getLanguage()|escape|default:"&mdash;"}</td>
 	</tr>
 </table>
+</div>
 </div>
 
 <div id="supportingAgencies">

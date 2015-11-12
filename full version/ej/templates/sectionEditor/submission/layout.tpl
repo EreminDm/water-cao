@@ -27,6 +27,7 @@
 </div>
 {/if}
 
+<div class="table-responsive">
 <table width="100%" class="info">
 	<tr>
 		<td width="28%" colspan="2">&nbsp;</td>
@@ -150,6 +151,7 @@
 		<td colspan="7" class="separator">&nbsp;</td>
 	</tr>
 </table>
+</div>
 
 <form method="post" action="{url op="uploadLayoutFile"}"  enctype="multipart/form-data">
 	<input type="hidden" name="from" value="submissionEditing" />

@@ -59,6 +59,7 @@ function deleteAttachment(fileId) {
 	<br/>
 {/if}
 
+<div class="table-responsive">
 <table class="data" width="100%">
 {if $addressFieldsEnabled}
 <tr valign="top">
@@ -171,6 +172,7 @@ function deleteAttachment(fileId) {
 	<td class="value"><input type="checkbox" name="blindCcReviewers" value="1" id="blindCcReviewers"/>&nbsp;&nbsp;<label for="blindCcReviewers">{translate key="submission.comments.blindCcReviewers"}</label></td>
 {/if}
 </table>
+</div>
 
 <p><input name="send" type="submit" value="{translate key="email.send"}" class="button defaultButton" /> <input type="button" value="{translate key="common.cancel"}" class="button" onclick="history.go(-1)" />{if !$disableSkipButton} <input name="send[skip]" type="submit" value="{translate key="email.skip"}" class="button" />{/if}</p>
 </form>

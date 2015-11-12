@@ -13,6 +13,7 @@
 {include file="common/header.tpl"}
 {/strip}
 
+<div class="table-responsive">
 <table width="100%">
 	<tr>
 		<td>{if $isUserLoggedIn}
@@ -28,6 +29,7 @@
 		</ul></td>
 	</tr>
 </table>
+</div>
 
 <br/>
 
@@ -36,6 +38,7 @@
 {$formattedNotifications}
 
 {if $notifications->wasEmpty()}
+<div class="table-responsive">
 	<table class="notifications">
 		<tr>
 			<td colspan="2" class="nodata"><h5>{translate key="notification.noneExist"}</h5></td>
@@ -44,13 +47,16 @@
 			<td colspan="2" class="endseparator">&nbsp;</td>
 		</tr>
 	</table>
+</div>
 {else}
+<div class="table-responsive">
 	<table class="notifications">
 		<tr>
 			<td align="left">{page_info iterator=$notifications}</td>
 			<td align="right">{page_links anchor="notifications" name="notifications" iterator=$notifications}</td>
 		</tr>
 	</table>
+</div>
 {/if}
 
 </div>

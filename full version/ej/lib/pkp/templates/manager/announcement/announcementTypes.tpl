@@ -22,6 +22,7 @@
 <br />
 
 <div id="announcementTypes">
+<div class="table-responsive">
 <table width="100%" class="listing">
 	<tr>
 		<td colspan="2" class="headseparator">&nbsp;</td>
@@ -56,6 +57,7 @@
 	</tr>
 {/if}
 </table>
+</div>
 
 <a href="{url op="createAnnouncementType"}" class="action">{translate key="manager.announcementTypes.create"}</a>
 </div>

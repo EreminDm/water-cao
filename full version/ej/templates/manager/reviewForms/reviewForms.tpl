@@ -22,6 +22,7 @@ $(document).ready(function() { setupTableDND("#dragTable", "moveReviewForm"); })
 <p>{translate key="manager.reviewForms.list.description"}</p>
 
 <div id="reviewForms">
+<div class="table-responsive">
 <table width="100%" class="listing" id="dragTable">
 	<tr>
 		<td class="headseparator" colspan="4">&nbsp;</td>
@@ -82,6 +83,7 @@ $(document).ready(function() { setupTableDND("#dragTable", "moveReviewForm"); })
 {/if}
 
 </table>
+</div>
 
 <a class="action" href="{url op="createReviewForm"}">{translate key="manager.reviewForms.create"}</a>
 </div>

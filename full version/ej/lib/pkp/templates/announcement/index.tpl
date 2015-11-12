@@ -15,6 +15,7 @@
 {/strip}
 
 <div id="announcementList">
+<div class="table-responsive">
 <table class="announcements">
 {if $announcementsIntroduction != null}
 	<tr class="intro">
@@ -58,6 +59,7 @@
 	</tr>
 {/if}
 </table>
+</div>
 </div>
 
 {include file="common/footer.tpl"}

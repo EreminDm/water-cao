@@ -42,6 +42,7 @@
 	<input type="hidden" name="source" value="{$source|escape}" />
 {/if}
 
+<div class="table-responsive">
 <table class="data" width="100%">
 {if count($formLocales) > 1 && !$existingUser}
 	<tr valign="top">
@@ -231,6 +232,7 @@
 {/if}
 
 </table>
+</div>
 
 <br />
 <p><input type="submit" value="{translate key="user.register"}" class="button defaultButton" /> <input type="button" value="{translate key="common.cancel"}" class="button" onclick="document.location.href='{url page="index" escape=false}'" /></p>

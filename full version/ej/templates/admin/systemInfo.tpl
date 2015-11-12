@@ -31,6 +31,7 @@
 </div>
 <div id="versionHistory">
 <h4>{translate key="admin.versionHistory"}</h4>
+<div class="table-responsive">
 <table class="listing" width="100%">
 	<tr>
 		<td colspan="6" class="headseparator">&nbsp;</td>
@@ -62,6 +63,7 @@
 </table>
 </div>
 </div>
+</div>
 
 <div id="systemConfiguration">
 <h3>{translate key="admin.systemConfiguration"}</h3>
@@ -71,6 +73,7 @@
 <h4>{$sectionName|escape}</h4>
 
 {if !empty($sectionData)}{* Empty tables cause validation problems *}
+<div class="table-responsive">
 <table class="data" width="100%">
 {foreach from=$sectionData key=settingName item=settingValue}
 <tr valign="top">
@@ -79,6 +82,7 @@
 </tr>
 {/foreach}
 </table>
+</div>
 {/if}{* !empty($sectionData) *}
 
 {/foreach}
@@ -88,6 +92,7 @@
 <h3>{translate key="admin.serverInformation"}</h3>
 <p>{translate key="admin.serverInformationDescription"}</p>
 
+<div class="table-responsive">
 <table class="data" width="100%">
 {foreach from=$serverInfo key=settingName item=settingValue}
 <tr valign="top">
@@ -96,6 +101,7 @@
 </tr>
 {/foreach}
 </table>
+</div>
 
 <a href="{url op="phpinfo"}" target="_blank">{translate key="admin.phpInfo"}</a>
 </div>

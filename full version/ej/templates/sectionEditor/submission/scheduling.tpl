@@ -11,6 +11,7 @@
 <div id="scheduling">
 <h3>{translate key="submission.scheduling"}</h3>
 
+<div class="table-responsive">
 <table class="data" width="100%">
 {if !$publicationFeeEnabled || $publicationPayment}
 	<form action="{url op="scheduleForPublication" path=$submission->getId()}" method="post">
@@ -88,4 +89,5 @@
 	</tr>
 {/if}
 </table>
+</div>
 </div>

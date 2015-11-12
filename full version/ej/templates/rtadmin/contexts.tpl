@@ -30,6 +30,7 @@ $(document).ready(function() { setupTableDND("#dragTable",
 <br />
 
 <div id="contexts">
+<div class="table-responsive">
 <table class="listing" width="100%" id="dragTable">
 	<tr><td class="headseparator" colspan="3">&nbsp;</td></tr>
 	<tr valign="top">
@@ -60,6 +61,7 @@ $(document).ready(function() { setupTableDND("#dragTable",
 		</tr>
 	{/if}
 	</table>
+	</div>
 <br/>
 
 <a href="{url op="createContext" path=$version->getVersionId()}" class="action">{translate key="rt.admin.contexts.createContext"}</a><br/>

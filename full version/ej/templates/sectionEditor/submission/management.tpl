@@ -14,6 +14,7 @@
 {assign var="submissionFile" value=$submission->getSubmissionFile()}
 {assign var="suppFiles" value=$submission->getSuppFiles()}
 
+<div class="table-responsive">
 <table width="100%" class="data">
 	<tr>
 		<td width="20%" class="label">{translate key="article.authors"}</td>
@@ -97,5 +98,6 @@
 	</tr>
 	{/if}
 </table>
+</div>
 </div>
 

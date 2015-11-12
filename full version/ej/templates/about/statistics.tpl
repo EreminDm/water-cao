@@ -16,6 +16,7 @@
 {* WARNING: This page should be kept roughly synchronized with the
    implementation of the Journal Manager's statistics page.        *}
 <div id="statistics">
+<div class="table-responsive">
 <table width="100%" class="data">
 	<tr valign="top">
 		<td width="25%" class="label"><h4>{translate key="common.year"}</h4></td>
@@ -91,6 +92,7 @@
 		{/foreach}
 	{/if}
 </table>
+</div>
 </div>
 {include file="common/footer.tpl"}
 

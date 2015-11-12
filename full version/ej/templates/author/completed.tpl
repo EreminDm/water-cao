@@ -9,6 +9,7 @@
  *
  *}
 <div id="submissions">
+<div class="table-responsive">
 <table class="listing" width="100%">
 	<tr><td class="headseparator" colspan="{if $statViews}7{else}6{/if}">&nbsp;</td></tr>
 	<tr valign="bottom" class="heading">
@@ -70,5 +71,6 @@
 	</tr>
 {/if}
 </table>
+</div>
 </div>
 

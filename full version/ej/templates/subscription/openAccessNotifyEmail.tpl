@@ -49,6 +49,7 @@ Content-Transfer-Encoding: quoted-printable
 			{if $section.title}<h4>{$section.title|escape}</h4>{/if}
 
 			{foreach from=$section.articles item=article}
+			<div class="table-responsive">
 				<table width="100%">
 					<tr>
 						<td>{$article->getLocalizedTitle()|strip_unsafe_html}</td>
@@ -71,6 +72,7 @@ Content-Transfer-Encoding: quoted-printable
 						<td align="right">{if $article->getPages()}{$article->getPages()|escape}{else}&nbsp;{/if}</td>
 						</tr>
 					</table>
+					</div>
 				{/foreach}
 			{if !$smarty.foreach.sections.last}
 				<div class="separator"></div>

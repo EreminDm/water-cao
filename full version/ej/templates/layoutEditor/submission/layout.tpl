@@ -23,7 +23,7 @@
 	</tr>
 </table>
 </div>
-
+<div class="table-responsive">
 <table width="100%" class="info">
 	<tr>
 		<td width="28%" colspan="2">{translate key="submission.layout.layoutVersion"}</td>
@@ -131,6 +131,7 @@
 		<td colspan="6" class="separator">&nbsp;</td>
 	</tr>
 </table>
+</div>
 
 <form method="post" action="{url op="uploadLayoutFile"}"  enctype="multipart/form-data">
 	<input type="hidden" name="articleId" value="{$submission->getId()}" />

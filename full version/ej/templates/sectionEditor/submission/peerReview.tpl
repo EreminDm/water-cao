@@ -11,6 +11,7 @@
 <div id="submission">
 <h3>{translate key="article.submission"}</h3>
 
+<div class="table-responsive">
 <table width="100%" class="data">
 	<tr>
 		<td width="20%" class="label">{translate key="article.authors"}</td>
@@ -98,11 +99,13 @@
 	</tr>
 {/foreach}
 </table>
+</div>
 
 <div class="separator"></div>
 </div>
 
 <div id="peerReview">
+<div class="table-responsive">
 <table class="data" width="100%">
 	<tr id="reviewersHeader" valign="middle">
 		<td width="22%"><h3>{translate key="submission.peerReview"}</h3></td>
@@ -113,6 +116,7 @@
 		</td>
 	</tr>
 </table>
+</div>
 
 {assign var="start" value="A"|ord}
 {foreach from=$reviewAssignments item=reviewAssignment key=reviewKey}
@@ -122,6 +126,7 @@
 	{assign var="reviewIndex" value=$reviewIndexes[$reviewId]}
 	<div class="separator"></div>
 
+<div class="table-responsive">
 	<table class="data" width="100%">
 	<tr class="reviewer">
 		<td class="r1" width="20%"><h4>{translate key="user.role.reviewer"} {$reviewIndex+$start|chr}</h4></td>
@@ -135,7 +140,9 @@
 		</td>
 	</tr>
 	</table>
+	</div>
 
+<div class="table-responsive">
 	<table width="100%" class="data">
 	<tr valign="top">
 		<td class="label">{translate key="submission.reviewForm"}</td>
@@ -154,6 +161,7 @@
 	<tr valign="top">
 		<td class="label" width="20%">&nbsp;</td>
 		<td width="80%">
+		<div class="table-responsive">
 			<table width="100%" class="info">
 				<tr>
 					<td class="heading" width="25%">{translate key="submission.request"}</td>
@@ -198,6 +206,7 @@
 					</td>
 				</tr>
 			</table>
+			</div>
 		</td>
 	</tr>
 
@@ -251,6 +260,7 @@
 		<tr valign="top">
 			<td class="label">{translate key="reviewer.article.uploadedFile"}</td>
 			<td>
+			<div class="table-responsive">
 				<table width="100%" class="data">
 					{foreach from=$reviewAssignment->getReviewerFileRevisions() item=reviewerFile key=key}
 					<tr valign="top">
@@ -272,6 +282,7 @@
 					</tr>
 					{/foreach}
 				</table>
+				</div>
 			</td>
 		</tr>
 	{/if}
@@ -324,6 +335,7 @@
 		</tr>
 	{/if}
 	</table>
+	</div>
 {/if}
 {/foreach}
 </div>

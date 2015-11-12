@@ -59,6 +59,7 @@ function checkEditorAssignments() {
 
 {include file="common/formErrors.tpl"}
 <div id="sectionForm">
+<div class="table-responsive">
 <table class="data" width="100%">
 {if count($formLocales) > 1}
 	<tr valign="top">
@@ -166,6 +167,7 @@ function checkEditorAssignments() {
 {/if}
 </table>
 </div>
+</div>
 <div class="separator"></div>
 <div id="sectionEditors">
 <h3>{translate key="user.role.sectionEditors"}</h3>
@@ -173,6 +175,7 @@ function checkEditorAssignments() {
 <p><span class="instruct">{translate key="manager.section.sectionEditorInstructions"}</span></p>
 <h4>{translate key="manager.sections.unassigned"}</h4>
 
+<div class="table-responsive">
 <table width="100%" class="listing" id="unassignedSectionEditors">
 	<tr>
 		<td colspan="3" class="headseparator">&nbsp;</td>
@@ -203,9 +206,11 @@ function checkEditorAssignments() {
 	</tr>
 </table>
 </div>
+</div>
 <div id="sectionsAssigned">
 <h4>{translate key="manager.sections.assigned"}</h4>
 
+<div class="table-responsive">
 <table width="100%" class="listing" id="assignedSectionEditors">
 	<tr>
 		<td colspan="5" class="headseparator">&nbsp;</td>
@@ -241,6 +246,7 @@ function checkEditorAssignments() {
 		<td colspan="5" class="endseparator">&nbsp;</td>
 	</tr>
 </table>
+</div>
 </div>
 <p><input type="submit" value="{translate key="common.save"}" class="button defaultButton" /> <input type="button" value="{translate key="common.cancel"}" class="button" onclick="document.location.href='{url op="sections" escape=false}'" /></p>
 

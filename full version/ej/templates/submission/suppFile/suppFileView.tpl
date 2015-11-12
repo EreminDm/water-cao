@@ -16,6 +16,7 @@
 <div id="supplementaryFileData">
 <h3>{translate key="author.submit.supplementaryFileData"}</h3>
 
+<div class="table-responsive">
 <table width="100%" class="data">
 	<tr valign="top">
 		<td width="20%" class="label">{translate key="common.title"}</td>
@@ -59,12 +60,14 @@
 	</tr>
 </table>
 </div>
+</div>
 
 <div class="separator"></div>
 
 <div id="supplementaryFileUpload">
 <h3>{translate key="author.submit.supplementaryFileUpload"}</h3>
 
+<div class="table-responsive">
 <table width="100%" class="data">
 {if $suppFile}
 	<tr valign="top">
@@ -84,12 +87,14 @@
 		<td class="value">{$suppFile->getDateUploaded()|date_format:$datetimeFormatShort}</td>
 	</tr>
 	</table>
+	</div>
 {else}
 	<tr valign="top">
 		<td colspan="2" class="noResults">{translate key="author.submit.suppFile.noFile"}</td>
 	</tr>
 {/if}
 </table>
+</div>
 </div>
 {include file="common/footer.tpl"}
 

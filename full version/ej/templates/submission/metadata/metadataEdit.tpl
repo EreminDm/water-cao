@@ -36,6 +36,7 @@ function moveAuthor(dir, authorIndex) {
 
 {if count($formLocales) > 1}
 <div id="locales">
+<div class="table-responsive">
 <table width="100%" class="data">
 	<tr valign="top">
 		<td width="20%" class="label">{fieldLabel name="formLocale" key="form.formLanguage"}</td>
@@ -60,6 +61,7 @@ function moveAuthor(dir, authorIndex) {
 		</td>
 	</tr>
 </table>
+</div>
 </locales>
 {/if}
 
@@ -71,6 +73,7 @@ function moveAuthor(dir, authorIndex) {
 <input type="hidden" name="moveAuthorDir" value="" />
 <input type="hidden" name="moveAuthorIndex" value="" />
 
+<div class="table-responsive">
 <table width="100%" class="data">
 	{foreach name=authors from=$authors key=authorIndex item=author}
 	<tr valign="top">
@@ -206,6 +209,7 @@ function moveAuthor(dir, authorIndex) {
 	</tr>
 	{/foreach}
 </table>
+</div>
 
 <p><input type="submit" class="button" name="addAuthor" value="{translate key="author.submit.addAuthor"}" /></p>
 </div>
@@ -216,6 +220,7 @@ function moveAuthor(dir, authorIndex) {
 <div id="titleAndAbstract">
 <h3>{translate key="submission.titleAndAbstract"}</h3>
 
+<div class="table-responsive">
 <table width="100%" class="data">
 	<tr>
 		<td width="20%" class="label">{fieldLabel name="title" required="true" key="article.title"}</td>
@@ -231,6 +236,7 @@ function moveAuthor(dir, authorIndex) {
 	</tr>
 </table>
 </div>
+</div>
 
 <div class="separator"></div>
 
@@ -240,6 +246,7 @@ function moveAuthor(dir, authorIndex) {
 <input type="hidden" name="fileName[{$formLocale|escape}]" value="{$fileName[$formLocale]|escape}" />
 <input type="hidden" name="originalFileName[{$formLocale|escape}]" value="{$originalFileName[$formLocale]|escape}" />
 
+<div class="table-responsive">
 <table width="100%" class="data">
 	<tr valign="top">
 		<td class="label" colspan="2"><input type="checkbox" name="showCoverPage[{$formLocale|escape}]" id="showCoverPage" value="1" {if $showCoverPage[$formLocale]} checked="checked"{/if} /> <label for="showCoverPage">{translate key="editor.article.showCoverPage"}</label></td>
@@ -266,6 +273,7 @@ function moveAuthor(dir, authorIndex) {
 	</tr>
 </table>
 </div>
+</div>
 
 <div class="separator"></div>
 
@@ -274,6 +282,7 @@ function moveAuthor(dir, authorIndex) {
 
 {if $journalSettings.metaDiscipline || $journalSettings.metaSubjectClass || $journalSettings.metaSubject || $journalSettings.metaCoverage || $journalSettings.metaType}<p>{translate key="author.submit.submissionIndexingDescription"}</p>{/if}
 
+<div class="table-responsive">
 <table width="100%" class="data">
 	{if $journalSettings.metaDiscipline}
 	<tr valign="top">
@@ -382,6 +391,7 @@ function moveAuthor(dir, authorIndex) {
 		</td>
 	</tr>
 </table>
+</div>
 </div>
 
 <div class="separator"></div>

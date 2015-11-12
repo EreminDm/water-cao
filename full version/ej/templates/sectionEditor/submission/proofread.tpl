@@ -24,6 +24,7 @@
 </table>
 {/if}
 
+<div class="table-responsive">
 <table width="100%" class="info">
 	<tr>
 		<td width="28%" colspan="2">&nbsp;</td>
@@ -176,6 +177,7 @@
 		<td colspan="6" class="separator">&nbsp;</td>
 	</tr>
 </table>
+</div>
 
 {translate key="submission.proofread.corrections"}
 {if $submission->getMostRecentProofreadComment()}

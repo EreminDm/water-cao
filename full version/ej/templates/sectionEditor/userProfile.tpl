@@ -15,6 +15,7 @@
 
 <h3>{translate key="user.profile"}: {$user->getFullName()|escape}</h3>
 
+<div class="table-responsive">
 <table class="data" width="100%">
 <tr valign="top">
 	<td width="20%" class="label">{translate key="user.salutation"}:</td>
@@ -108,6 +109,7 @@
 	<td class="value">{$user->getDateLastLogin()|date_format:$datetimeFormatLong}</td>
 </tr>
 </table>
+</div>
 
 {include file="common/footer.tpl"}
 

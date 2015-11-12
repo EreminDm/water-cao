@@ -16,6 +16,7 @@
 <h3>{translate key="editor.article.selectReviewForm"}</h3>
 
 <div id="assignReviewForm">
+<div class="table-responsive">
 <table width="100%" class="listing">
 	<tr>
 		<td class="headseparator" colspan="2">&nbsp;</td>
@@ -52,6 +53,7 @@
 	</tr>
 {/if}
 </table>
+</div>
 </div>
 
 {include file="common/footer.tpl"}

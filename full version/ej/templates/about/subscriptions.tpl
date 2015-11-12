@@ -46,6 +46,7 @@
 <div id="availableSubscriptionTypes">
 <h3>{translate key="about.subscriptions.individual"}</h3>
 <p>{translate key="subscriptions.individualDescription"}</p>
+<div class="table-responsive">
 <table width="100%" class="listing">
 	<tr>
 		<td colspan="4" class="headseparator">&nbsp;</td>
@@ -70,12 +71,14 @@
 {/iterate}
 </table>
 </div>
+</div>
 <br />
 {/if}
 
 {if !$institutionalSubscriptionTypes->wasEmpty()}
 <h3>{translate key="about.subscriptions.institutional"}</h3>
 <p>{translate key="subscriptions.institutionalDescription"}</p>
+<div class="table-responsive">
 <table width="100%" class="listing">
 	<tr>
 		<td colspan="4" class="headseparator">&nbsp;</td>
@@ -99,6 +102,7 @@
 		<tr><td colspan="4" class="{if $institutionalSubscriptionTypes->eof()}end{/if}separator">&nbsp;</td></tr>
 {/iterate}
 </table>
+</div>
 {/if}
 
 {include file="common/footer.tpl"}

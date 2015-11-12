@@ -65,6 +65,7 @@
 <br />
 
 <div id="subscriptions">
+<div class="table-responsive">
 <table width="100%" class="listing">
 	<tr>
 		<td colspan="6" class="headseparator">&nbsp;</td>
@@ -113,6 +114,7 @@
 	</tr>
 {/if}
 </table>
+</div>
 <a href="{url op="selectSubscriber" path="institutional"}" class="action">{translate key="manager.subscriptions.create"}</a>
 </div>
 

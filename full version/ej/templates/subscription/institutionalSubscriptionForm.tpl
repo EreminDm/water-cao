@@ -30,6 +30,7 @@
 
 {include file="common/formErrors.tpl"}
 
+<div class="table-responsive">
 <table class="data" width="100%">
 {if count($formLocales) > 1}
 	<tr valign="top">
@@ -57,11 +58,13 @@
 	</script>
 {/if}
 </table>
+</div>
 
 <br />
 <div class="separator"></div>
 <br />
 
+<div class="table-responsive">
 <table class="data" width="100%">
 <tr valign="top">
 	<td width="20%" class="label">{fieldLabel name="institutionName" required="true" key="manager.subscriptions.form.institutionName"}</td>
@@ -81,6 +84,9 @@
 </tr>
 
 </table>
+</div>
+
+<div class="table-responsive">
 <table class="data" width="100%">
 	{foreach name=ipRanges from=$ipRanges key=ipRangeIndex item=ipRange}
 	<tr valign="top">
@@ -115,10 +121,12 @@
 		<td width="80%"><span class="instruct">{translate key="manager.subscriptions.form.ipRangeInstructions"}</span></td>
 	</tr>
 </table>
+</div>
 
 <div class="separator"></div>
 <br />
 
+<div class="table-responsive">
 <table class="data" width="100%">
 <tr valign="top">
 	<td width="20%" class="label">{fieldLabel name="userId" required="true" key="manager.subscriptions.form.userContact"}</td>
@@ -131,17 +139,20 @@
 </tr>
 {include file="subscription/subscriptionFormUser.tpl"}
 </table>
+</div>
 
 <br />
 <div class="separator"></div>
 <br />
 
+<div class="table-responsive">
 <table class="data" width="100%">
 <tr valign="top">
 	<td width="20%" class="label">{fieldLabel name="notes" key="manager.subscriptions.form.notes"}</td>
 	<td width="80%" class="value"><textarea name="notes" id="notes" cols="40" rows="6" class="textArea">{$notes|escape}</textarea></td>
 </tr>
 </table>
+</div>
 
 <p><input type="submit" value="{translate key="common.save"}" class="button defaultButton" /> {if not $subscriptionId}<input type="submit" name="createAnother" value="{translate key="manager.subscriptions.form.saveAndCreateAnother"}" class="button" /> {/if}<input type="button" value="{translate key="common.cancel"}" class="button" onclick="document.location.href='{url op="subscriptions" path="institutional" escape=false}'" /></p>
 

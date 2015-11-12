@@ -81,6 +81,7 @@
 
 {include file="common/formErrors.tpl"}
 
+<div class="table-responsive">
 <table width="100%" class="data">
 {if count($formLocales) > 1}
 	 <tr valign="top">
@@ -256,6 +257,7 @@
 	</tr>
 	{/if}
 </table>
+</div>
 
 <p><input type="submit" value="{translate key="common.save"}" class="button defaultButton" /> {if not $userId}<input type="submit" name="createAnother" value="{translate key="manager.people.saveAndCreateAnotherUser"}" class="button" /> {/if}<input type="button" value="{translate key="common.cancel"}" class="button" onclick="{if $source == ''}history.go(-1);{else}document.location='{$source|escape:"jsparam"}';{/if}" /></p>
 

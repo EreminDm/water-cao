@@ -16,14 +16,17 @@
 {/if}
 
 {if $useCopyeditors}
+<div class="table-responsive">
 <table class="data" width="100%">
 	<tr>
 		<td class="label" width="20%">{translate key="user.role.copyeditor"}</td>
 		<td class="label" width="80%">{if $submission->getUserIdBySignoffType('SIGNOFF_COPYEDITING_INITIAL')}{$copyeditor->getFullName()|escape}{else}{translate key="common.none"}{/if}</td>
 	</tr>
 </table>
+</div>
 {/if}
 
+<div class="table-responsive">
 <table width="100%" class="info">
 	<tr>
 		<td width="40%" colspan="2"><a href="{url op="viewMetadata" path=$submission->getId()}" class="action">{translate key="submission.reviewMetadata"}</a></td>
@@ -114,6 +117,7 @@
 		<td colspan="5" class="separator">&nbsp;</td>
 	</tr>
 </table>
+</div>
 
 {translate key="submission.copyedit.copyeditComments"}
 {if $submission->getMostRecentCopyeditComment()}

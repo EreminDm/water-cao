@@ -23,6 +23,7 @@
 <br />
 
 <form action="{if $versionId}{url op="saveVersion" path=$versionId}{else}{url op="createVersion" path="save"}{/if}" method="post">
+<div class="table-responsive">
 <table class="data" width="100%">
 	<tr valign="top">
 		<td class="label" width="20%"><label for="title">{translate key="rt.version.title"}</label></td>
@@ -43,6 +44,7 @@
 		</td>
 	</tr>
 </table>
+</div>
 
 <p><input type="submit" value="{translate key="common.save"}" class="button defaultButton" /> <input type="button" value="{translate key="common.cancel"}" class="button" onclick="document.location.href='{url op="versions" escape=false}'" /></p>
 

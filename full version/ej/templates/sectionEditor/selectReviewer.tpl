@@ -47,6 +47,7 @@ function sortSearch(heading, direction) {
 <p><a class="action" href="{url op="enrollSearch" path=$articleId}">{translate key="sectionEditor.review.enrollReviewer"}</a>&nbsp;|&nbsp;<a class="action" href="{url op="createReviewer" path=$articleId}">{translate key="sectionEditor.review.createReviewer"}</a>{foreach from=$reviewerDatabaseLinks item="link"}{if !empty($link.title) && !empty($link.url)}&nbsp;|&nbsp;<a href="{$link.url|escape}" target="_new" class="action">{$link.title|escape}</a>{/if}{/foreach}</p>
 
 <div id="reviewers">
+<div class="table-responsive">
 <table class="listing" width="100%">
 {assign var=numCols value=7}
 {if $rateReviewerOnQuality}
@@ -122,6 +123,7 @@ function sortSearch(heading, direction) {
 	</tr>
 {/if}
 </table>
+</div>
 
 <h4>{translate key="common.notes"}</h4>
 <p>{translate key="editor.article.selectReviewerNotes"}</p>

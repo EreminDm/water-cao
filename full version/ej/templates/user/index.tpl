@@ -31,6 +31,7 @@
 	{else}<h3>{$journal->getLocalizedTitle()|escape}</h3>{/if}
 	{assign var="journalId" value=$journal->getId()}
 	{assign var="journalPath" value=$journal->getPath()}
+	<div class="table-responsive">
 	<table width="100%" class="info">
 		{if $isValid.JournalManager.$journalId}
 			<tr>
@@ -166,6 +167,7 @@
 		</tr>
 			
 	</table>
+	</div>
 	{call_hook name="Templates::User::Index::Journal" journal=$journal}
 	</div>
 {/foreach}

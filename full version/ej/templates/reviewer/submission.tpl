@@ -34,6 +34,7 @@ function confirmSubmissionCheck() {
 <div id="submissionToBeReviewed">
 <h3>{translate key="reviewer.article.submissionToBeReviewed"}</h3>
 
+<div class="table-responsive">
 <table width="100%" class="data">
 <tr valign="top">
 	<td width="20%" class="label">{translate key="article.title"}</td>
@@ -79,9 +80,11 @@ function confirmSubmissionCheck() {
 	</tr>
 </table>
 </div>
+</div>
 <div class="separator"></div>
 <div id="reviewSchedule">
 <h3>{translate key="reviewer.article.reviewSchedule"}</h3>
+<div class="table-responsive">
 <table width="100%" class="data">
 <tr valign="top">
 	<td class="label" width="20%">{translate key="reviewer.article.schedule.request"}</td>
@@ -101,6 +104,7 @@ function confirmSubmissionCheck() {
 </tr>
 </table>
 </div>
+</div>
 <div class="separator"></div>
 
 <div id="reviewSteps">
@@ -110,6 +114,7 @@ function confirmSubmissionCheck() {
 
 {assign var="currentStep" value=1}
 
+<div class="table-responsive">
 <table width="100%" class="data">
 <tr valign="top">
 	{assign var=editAssignments value=$submission->getEditAssignments}
@@ -159,6 +164,7 @@ function confirmSubmissionCheck() {
 <tr valign="top">
 	<td>&nbsp;</td>
 	<td>
+	<div class="table-responsive">
 		<table width="100%" class="data">
 			{if ($confirmedStatus and not $declined) or not $journal->getSetting('restrictReviewerFileAccess')}
 			<tr valign="top">
@@ -198,6 +204,7 @@ function confirmSubmissionCheck() {
 			<tr><td class="nodata">{translate key="reviewer.article.restrictedFileAccess"}</td></tr>
 			{/if}
 		</table>
+		</div>
 	</td>
 </tr>
 <tr>
@@ -275,6 +282,7 @@ function confirmSubmissionCheck() {
 <tr valign="top">
 	<td>&nbsp;</td>
 	<td>
+	<div class="table-responsive">
 		<table class="data" width="100%">
 			{foreach from=$submission->getReviewerFileRevisions() item=reviewerFile key=key}
 				{assign var=uploadedFileExists value="1"}
@@ -303,6 +311,7 @@ function confirmSubmissionCheck() {
 				</tr>
 			{/foreach}
 		</table>
+		</div>
 		{if $submission->getRecommendation() === null || $submission->getRecommendation() === ''}
 			<form method="post" action="{url op="uploadReviewerVersion"}" enctype="multipart/form-data">
 				<input type="hidden" name="reviewId" value="{$reviewId|escape}" />
@@ -328,6 +337,7 @@ function confirmSubmissionCheck() {
 <tr valign="top">
 	<td>&nbsp;</td>
 	<td>
+	<div class="table-responsive">
 		<table class="data" width="100%">
 			<tr valign="top">
 				<td class="label" width="30%">{translate key="submission.recommendation"}</td>
@@ -348,9 +358,11 @@ function confirmSubmissionCheck() {
 				</td>
 			</tr>
 		</table>
+		</div>
 	</td>
 </tr>
 </table>
+</div>
 </div>
 {if $journal->getLocalizedSetting('reviewGuidelines') != ''}
 <div class="separator"></div>

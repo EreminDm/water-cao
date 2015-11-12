@@ -32,6 +32,7 @@
 <div class="separator"></div>
 
 <h3>{translate key="submission.history.submissionEmailLog"}</h3>
+<div class="table-responsive">
 <table width="100%" class="data">
 	<tr valign="top">
 		<td width="20%" class="label">{translate key="common.id"}</td>
@@ -86,6 +87,7 @@
 		<td class="value">{$logEntry->getBody()|escape|nl2br}</td>
 	</tr>
 </table>
+</div>
 {if $isEditor}
 	<a href="{url page="editor" op="clearSubmissionEmailLog" path=$submission->getId()|to_array:$logEntry->getId()}" onclick="return confirm('{translate|escape:"jsparam" key="submission.email.confirmDeleteLogEntry"}')" class="action">{translate key="submission.email.deleteLogEntry"}</a><br/>
 {/if}

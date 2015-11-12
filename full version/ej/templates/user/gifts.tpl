@@ -21,6 +21,7 @@
 
 <br />
 
+<div class="table-responsive">
 <table width="100%" class="info">
 	{iterate from=giftSubscriptions item=gift}
 		<tr valign="top">
@@ -59,6 +60,7 @@
 		</tr>
 	{/if}
 </table>
+</div>
 {/if}
 
 {include file="common/footer.tpl"}

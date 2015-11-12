@@ -9,6 +9,7 @@
  *
  *}
 <div id="submissions">
+<div class="table-responsive">
 <table width="100%" class="listing">
 	<tr><td colspan="8" class="headseparator">&nbsp;</td></tr>
 	<tr class="heading" valign="bottom">
@@ -58,5 +59,6 @@
 	</tr>
 {/if}
 </table>
+</div>
 </div>
 

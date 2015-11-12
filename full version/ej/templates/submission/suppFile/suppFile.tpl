@@ -43,6 +43,7 @@
 <h3>{translate key="author.submit.supplementaryFileData"}</h3>
 <p>{translate key="author.submit.supplementaryFileDataDescription"}</p>
 
+<div class="table-responsive">
 <table width="100%" class="data">
 	<tr valign="top">
 		<td width="20%" class="label">{fieldLabel name="title" required="true" key="common.title"}</td>
@@ -107,6 +108,7 @@
 		</td>
 	</tr>
 </table>
+</div>
 </div>
 <div class="separator"></div>
 

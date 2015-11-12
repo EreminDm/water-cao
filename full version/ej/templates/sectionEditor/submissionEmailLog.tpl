@@ -34,6 +34,7 @@
 <div id="emailLogEntries">
 <h3>{translate key="submission.history.submissionEmailLog"}</h3>
 
+<div class="table-responsive">
 <table width="100%" class="listing">
 	<tr><td class="headseparator" colspan="5">&nbsp;</td></tr>
 	<tr valign="top" class="heading">
@@ -70,6 +71,7 @@
 	</tr>
 {/if}
 </table>
+</div>
 
 {if $isEditor}
 <a class="action" href="{url page="editor" op="clearSubmissionEmailLog" path=$submission->getId()}" onclick="return confirm('{translate|escape:"jsparam" key="submission.email.confirmClearLog"}')">{translate key="submission.history.clearLog"}</a>

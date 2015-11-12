@@ -349,6 +349,7 @@ html body {
 	}
 	#headerTitle {
    		 width: 85%;
+	   	 height: 6%;
 	}
 	ul.menu{
 		padding-left: 5% !important;
@@ -368,6 +369,7 @@ html body {
     border: 1px solid #ddd;
 	min-height: .01%;
     overflow-x: auto;
+	}
 }
 
 @media (min-device-width: 1024px ) {

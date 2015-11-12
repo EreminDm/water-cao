@@ -22,6 +22,7 @@ $(document).ready(function() { setupTableDND("#dragTable", "moveSection"); });
 <br/>
 
 <div id="sections">
+<div class="table-responsive">
 <table width="100%" class="listing" id="dragTable">
 	<tr>
 		<td class="headseparator" colspan="3">&nbsp;</td>
@@ -60,6 +61,7 @@ $(document).ready(function() { setupTableDND("#dragTable", "moveSection"); });
 	</tr>
 {/if}
 </table>
+</div>
 <a class="action" href="{url op="createSection"}">{translate key="manager.sections.create"}</a>
 </div>
 

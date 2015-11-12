@@ -8,18 +8,12 @@
  * Navigation Bar
  *
  *}
-<div id="navbar">
+ 	<i onclick="hamburger()" class="fa fa-bars fa-2x"></i>
+<div id="navbar" class="menuClose">
 	<ul class="menu">
 		<li id="home"><a href="http://water-ca.org/ej/index.php/IUVR">{translate key="navigation.home"}</a></li>
 		<li id="about"><a href="http://water-ca.org/ej/index.php/IUVR/pages/view/about">{translate key="navigation.about"}</a></li>
 		<li id="about"><a href="http://water-ca.org/ej/index.php/IUVR/pages/view/authors">{translate key="navigation.authors"}</a></li>
-
-		{if $isUserLoggedIn}
-			<li id="userHome"><a href="{url journal="index" page="user"}">{translate key="navigation.userHome"}</a></li>
-			<li id="userHome"><a href="{url page="login" op="signOut"}">{translate key="user.logOut"}</a></li>
-		{else}
-			<li id="login"><a href="{url page="login"}">{translate key="navigation.login"}</a></li>
-		{/if}{* $isUserLoggedIn *}
 
 		{if $siteCategoriesEnabled}
 			<li id="categories"><a href="{url journal="index" page="search" op="categories"}">{translate key="navigation.categories"}</a></li>
@@ -46,6 +40,13 @@
 			{/if}
 		{/foreach}
 		<li id="about"><a href="http://water-ca.org/ej/index.php/IUVR/pages/view/news">{translate key="navigation.newsletter"}</a></li>
-		<li id="about"><a href="http://water-ca.org/ej/index.php/IUVR/pages/view/contact">{translate key="about.contact"}</a></li>		
+		<li id="about"><a href="http://water-ca.org/ej/index.php/IUVR/pages/view/contact">{translate key="about.contact"}</a></li>
+		{if $isUserLoggedIn}
+			<li id="userHome"><a href="{url journal="index" page="user"}">{translate key="navigation.userHome"}</a></li>
+			<li id="userHome"><a href="{url page="login" op="signOut"}">{translate key="user.logOut"}</a></li>
+		{else}
+			<li id="login"><a href="{url page="login"}">{translate key="navigation.login"}</a></li>
+		{/if}{* $isUserLoggedIn *}
 	</ul>
 </div>
+<hr>

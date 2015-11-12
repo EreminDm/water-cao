@@ -11,6 +11,7 @@
 <div id="editorDecision">
 <h3>{translate key="submission.editorDecision"}</h3>
 
+<div class="table-responsive">
 <table id="table1" width="100%" class="data">
 <tr valign="top">
 	<td class="label" width="20%">{translate key="editor.article.selectDecision"}</td>
@@ -61,6 +62,7 @@
 	</td>
 </tr>
 </table>
+</div>
 
 <form method="post" action="{url op="editorReview"}" enctype="multipart/form-data">
 <input type="hidden" name="articleId" value="{$submission->getId()}" />
@@ -80,6 +82,7 @@
 	{assign var="reviewVersionExists" value=1}
 {/if}
 
+<div class="table-responsive">
 <table id="table2" class="data" width="100%">
 	{if $lastDecision == SUBMISSION_EDITOR_DECISION_RESUBMIT}
 		<tr>
@@ -170,6 +173,7 @@
 	</tr>
 
 </table>
+</div>
 
 </form>
 </div>

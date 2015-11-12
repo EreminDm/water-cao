@@ -59,7 +59,7 @@ function deleteAttachment(fileId) {
 	</ul>
 	<br/>
 {/if}
-
+<div class="table-responsive">
 <table class="data" width="100%">
 <tr valign="top">
 	<td class="label" width="20%">{fieldLabel name="to" key="email.to"}</td>
@@ -158,6 +158,7 @@ function deleteAttachment(fileId) {
 	<td class="value"><textarea name="body" cols="60" rows="15" class="textArea">{$body|escape}</textarea></td>
 </tr>
 </table>
+</div>
 
 <p><input name="send" type="submit" value="{translate key="email.send"}" class="button defaultButton" /> <input type="button" value="{translate key="common.cancel"}" class="button" onclick="history.go(-1)" />{if !$disableSkipButton} <input name="send[skip]" type="submit" value="{translate key="email.skip"}" class="button" />{/if}</p>
 </form>

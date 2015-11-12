@@ -42,6 +42,7 @@ function doSubmit() {
 <p><span class="instruct">{translate key="admin.journals.createInstructions"}</span></p>
 {/if}
 
+<div class="table-responsive">
 <table class="data" width="100%">
 {if count($formLocales) > 1}
 	<tr valign="top">
@@ -76,6 +77,7 @@ function doSubmit() {
 		</td>
 	</tr>
 </table>
+</div>
 
 <p><input type="button" id="saveJournal" value="{translate key="common.save"}" class="button defaultButton" onclick="doSubmit()" /> <input type="button" value="{translate key="common.cancel"}" class="button" onclick="document.location.href='{url op="journals" escape=false}'" /></p>
 

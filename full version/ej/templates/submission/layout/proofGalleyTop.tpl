@@ -33,6 +33,7 @@
 	{$additionalHeadData}
 </head>
 <body>
+<div class="table-responsive">
 	<table width="100%" height="100%">
 		<tr>
 			<td align="center">
@@ -40,6 +41,7 @@
 			</td>
 		</tr>
 	</table>
+	</div>
 </body>
 </html>
 

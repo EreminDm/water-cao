@@ -8,6 +8,7 @@
  * Display list of announcements without site header or footer.
  *
  *}
+ <div class="table-responsive">
 <table class="announcements">
 	<tr>
 		<td colspan="2" class="headseparator">&nbsp;</td>
@@ -49,3 +50,4 @@
 	</tr>
 {/if}
 </table>
+</div>

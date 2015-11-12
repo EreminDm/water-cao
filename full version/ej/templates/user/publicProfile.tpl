@@ -32,6 +32,7 @@
 	{/if}
 </h4>
 
+<div class="table-responsive">
 <table class="listing" width="100%">
 	{if $user->getLocalizedAffiliation()}
 		<tr valign="top">
@@ -55,6 +56,7 @@
 		</tr>
 	{/if}{* $user->getLocalizedBiography() *}
 </table>
+</div>
 
 </div>{* id="mainContent" *}
 

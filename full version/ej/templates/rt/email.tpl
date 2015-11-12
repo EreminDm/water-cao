@@ -62,6 +62,7 @@ function deleteAttachment(fileId) {
 	<br/>
 {/if}
 
+<div class="table-responsive">
 <table class="data" width="100%">
 {if $addressFieldsEnabled}
 <tr valign="top">
@@ -158,6 +159,7 @@ function deleteAttachment(fileId) {
 	<td class="value"><textarea name="body" cols="50" rows="15" class="textArea">{$body|escape}</textarea></td>
 </tr>
 </table>
+</div>
 
 <p><input name="send" type="submit" value="{translate key="email.send"}" class="button defaultButton" /> <input type="button" value="{translate key="common.close"}" class="button" onclick="window.close();" /></p>
 </form>

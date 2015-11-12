@@ -71,6 +71,7 @@
 	<input type="hidden" name="noteId" value="{$articleNote->getId()}" />
 	<input type="hidden" name="fileId" value="{$articleNote->getFileId()}" />
 
+<div class="table-responsive">
 <table width="100%" class="data">
 	<tr valign="top">
 		<td class="label" width="20%">{translate key="common.dateModified"}</td>
@@ -93,6 +94,7 @@
 		<td class="value" width="80%">{if $articleNote->getFileId()}<a href="{url op="downloadFile" path=$articleId|to_array:$articleNote->getFileId()}">{$articleNote->getOriginalFileName()|escape}</a><br /><input type="checkbox" name="removeUploadedFile" value="1" />&nbsp;{translate key="submission.notes.removeUploadedFile"}{else}&mdash;{/if}</td>
 	</tr>
 </table>
+</div>
 <br />
 <input type="button" class="button" value="{translate key="submission.notes.deleteNote"}" onclick="confirmAction('{url op="removeSubmissionNote" articleId=$articleNote->getArticleId() noteId=$articleNote->getId() fileId=$articleNote->getFileId()}', '{translate|escape:"jsparam" key="submission.notes.confirmDelete"}')" />&nbsp;<input type="submit" class="button defaultButton" value="{translate key="submission.notes.updateNote"}" />
 </form>
@@ -101,6 +103,7 @@
 	<h3>{translate key="submission.notes.addNewNote"}</h3>
 	<form name="addNote" method="post" action="{url op="addSubmissionNote"}" enctype="multipart/form-data">
 	<input type="hidden" name="articleId" value="{$articleId|escape}" />
+	<div class="table-responsive">
 	<table width="100%" class="data">
 	<tr valign="top">
 		<td class="label" width="20%">{translate key="common.title"}</td>
@@ -115,12 +118,14 @@
 		<td class="value"><input type="file" name="upload" class="uploadField" /></td>
 	</tr>
 	</table>
+	</div>
 	<br/>
 	<input type="submit" class="button defaultButton" value="{translate key="submission.notes.createNewNote"}" />
 	</form>
 {else}
 <h3>{translate key="submission.notes"}</h3>
 
+<div class="table-responsive">
 <table width="100%" class="listing">
 	<tr><td colspan="6" class="headseparator">&nbsp;</td></tr>
 	<tr class="heading" valign="bottom">
@@ -162,6 +167,7 @@
 	</tr>
 {/if}
 </table>
+</div>
 
 <a class="action" href="javascript:toggleNoteAll()"><div style="display:inline" id="expandNotes" name="expandNotes">{translate key="submission.notes.expandNotes"}</div><div style="display: none" id="collapseNotes" name="collapseNotes">{translate key="submission.notes.collapseNotes"}</div></a> |
 <a class="action" href="{url op="submissionNotes" path=$submission->getId()|to_array:"add"}">{translate key="submission.notes.addNewNote"}</a> |

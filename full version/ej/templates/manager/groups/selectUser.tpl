@@ -28,6 +28,7 @@
 <p>{foreach from=$alphaList item=letter}<a href="{url path=$group->getId() searchInitial=$letter}">{if $letter == $searchInitial}<strong>{$letter|escape}</strong>{else}{$letter|escape}{/if}</a> {/foreach}<a href="{url path=$group->getId()}">{if $searchInitial==''}<strong>{translate key="common.all"}</strong>{else}{translate key="common.all"}{/if}</a></p>
 
 <div id="users">
+<div class="table-responsive">
 <table width="100%" class="listing">
 <tr><td colspan="2" class="headseparator">&nbsp;</td></tr>
 <tr class="heading" valign="bottom">
@@ -57,6 +58,7 @@
 	</tr>
 {/if}
 </table>
+</div>
 {if $backLink}
 <a href="{$backLink}">{translate key="$backLinkLabel"}</a>
 {/if}

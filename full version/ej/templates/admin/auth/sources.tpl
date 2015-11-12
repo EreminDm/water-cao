@@ -18,6 +18,7 @@
 <form method="post" action="{url op="updateAuthSources"}">
 
 <div id="sources">
+<div class="table-responsive">
 <table width="100%" class="listing">
 	<tr>
 		<td colspan="4" class="headseparator">&nbsp;</td>
@@ -63,6 +64,7 @@
 		</td>
 	</tr>
 </table>
+</div>
 
 </form>
 

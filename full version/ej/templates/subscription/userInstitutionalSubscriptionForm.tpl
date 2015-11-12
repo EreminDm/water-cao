@@ -24,6 +24,7 @@
 
 {include file="common/formErrors.tpl"}
 
+<div class="table-responsive">
 <table class="data" width="100%">
 <tr valign="top">
 	<td width="20%" class="label">{fieldLabel name="typeId" required="true" key="user.subscriptions.form.typeId"}</td>
@@ -61,6 +62,9 @@
 </tr>
 
 </table>
+</div>
+
+<div class="table-responsive">
 <table class="data" width="100%">
 	{foreach name=ipRanges from=$ipRanges key=ipRangeIndex item=ipRange}
 	<tr valign="top">
@@ -95,6 +99,7 @@
 		<td width="80%"><span class="instruct">{translate key="user.subscriptions.form.ipRangeInstructions"}</span></td>
 	</tr>
 </table>
+</div>
 
 <p><input type="submit" value="{translate key="common.continue"}" class="button defaultButton" /> <input type="button" value="{translate key="common.cancel"}" class="button" onclick="document.location.href='{url page="user" op="subscriptions" escape=false}'" /></p>
 

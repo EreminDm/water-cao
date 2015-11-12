@@ -20,6 +20,7 @@
 		<h3>{translate key="defaultMetric.title"}</h3>
 		<p>{translate key="manager.statistics.defaultMetricDescription"}</p>
 		<div id="defaultMetricSelection">
+		<div class="table-responsive">
 			<table class="data" width="100%">
 				<tr valign="top">
 					<td width="20%" class="label">{fieldLabel name="defaultMetricType" key="defaultMetric.availableMetrics"}</td>
@@ -32,6 +33,7 @@
 					</td>
 				</tr>
 			</table>
+			</div>
 		</div>
 		<br />
 	{/if}
@@ -46,6 +48,7 @@
 <br/>
 
 <form action="{url op="savePublicStatisticsList"}" method="post">
+<div class="table-responsive">
 <table width="100%" class="data">
 	<tr valign="top">
 		<td width="25%" class="label"><h4>{translate key="common.year"}</h4></td>
@@ -129,6 +132,7 @@
 		<td width="20%" colspan="3" class="label"><input type="checkbox" id="statViews" name="statViews" {if $statViews}checked="checked" {/if}/><label for="statViews">{translate key="manager.statistics.statistics.articleViews"}</label></td>
 	</tr>
 </table>
+</div>
 <p>{translate key="manager.statistics.statistics.note"}</p>
 
 {translate key="manager.statistics.statistics.makePublic"}<br/>

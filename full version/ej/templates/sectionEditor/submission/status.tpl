@@ -10,6 +10,7 @@
 <div id="status">
 <h3>{translate key="common.status"}</h3>
 
+<div class="table-responsive">
 <table width="100%" class="data">
 	<tr>
 		{assign var="status" value=$submission->getSubmissionStatus()}
@@ -47,5 +48,6 @@
 	</tr>
 {/if}
 </table>
+</div>
 </div>
 

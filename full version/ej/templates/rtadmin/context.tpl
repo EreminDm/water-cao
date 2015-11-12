@@ -23,6 +23,7 @@
 <br />
 
 <form action="{if $contextId}{url op="saveContext" path=$versionId|to_array:$contextId}{else}{url op="createContext" path=$versionId|to_array:"save"}{/if}" method="post">
+<div class="table-responsive">
 <table class="data" width="100%">
 	<tr valign="top">
 		<td class="label" width="20%"><label for="title">{translate key="rt.context.title"}</label></td>
@@ -41,6 +42,7 @@
 	<tr valign="top">
 		<td class="label">{translate key="rt.admin.contexts.options"}</label></td>
 		<td class="value">
+		<div class="table-responsive">
 			<table width="100%" class="data">
 				<tr valign="top">
 					<td width="3%"><input type="checkbox" name="authorTerms" id="authorTerms" {if $authorTerms}checked="checked"{/if} /></td>
@@ -61,9 +63,11 @@
 					<td><label for="citedBy">{translate key="rt.admin.contexts.options.citedBy" settingsUrl=$url}</label></td>
 				</tr>
 			</table>
+			</div>
 		</td>
 	</tr>
 </table>
+</div>
 
 <p><input type="submit" value="{translate key="common.save"}" class="button defaultButton" /> <input type="button" value="{translate key="common.cancel"}" class="button" onclick="document.location.href='{url op="contexts" path=$versionId escape=false}'" /></p>
 

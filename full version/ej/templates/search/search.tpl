@@ -20,6 +20,7 @@
 		{rdelim});
 	</script>
 	<form method="post" id="searchForm" action="{url op="search"}">
+	<div class="table-responsive">
 		<table class="data">
 			<tr valign="top">
 				<td class="label"><label for="query">{translate key="search.searchAllCategories"}</label></td>
@@ -58,9 +59,11 @@
 				{include file="search/searchFilter.tpl" displayIf="activeFilter" filterName="indexTerms" filterValue=$indexTerms key="search.indexTermsLong"}
 			{/if}
 		</table>
+		</div>
 		<br/>
 		{if $hasEmptyFilters}
 			{capture assign="emptyFilters"}
+			<div class="table-responsive">
 				<table class="data">
 					{if empty($authors) || empty($title) || empty($abstract) || empty($galleyFullText) || empty($suppFiles)}
 						<tr valign="top">
@@ -90,6 +93,7 @@
 						{include file="search/searchFilter.tpl" displayIf="emptyFilter" filterName="indexTerms" filterValue=$indexTerms key="search.indexTermsLong"}
 					{/if}
 				</table>
+				</div>
 				<p><input type="submit" value="{translate key="common.search"}" class="button defaultButton" /></p>
 			{/capture}
 			{include file="controllers/extrasOnDemand.tpl" id="emptyFilters" moreDetailsText="search.advancedSearchMore" lessDetailsText="search.advancedSearchLess" extraContent=$emptyFilters}
@@ -107,6 +111,7 @@
 {/if}
 
 <div id="results">
+<div class="table-responsive">
 	<table width="100%" class="listing">
 		<tr><td colspan="{$numCols|escape}" class="headseparator">&nbsp;</td></tr>
 		<tr class="heading" valign="bottom">
@@ -185,6 +190,7 @@
 			</tr>
 		{/if}
 	</table>
+	</div>
 
 	{capture assign="syntaxInstructions"}{call_hook name="Templates::Search::SearchResults::SyntaxInstructions"}{/capture}
 	<p>

@@ -62,6 +62,7 @@ function doSubmit() {
 
 <p>{translate key="installer.localeSettingsInstructions" supportsMBString=$supportsMBString}</p>
 
+<div class="table-responsive">
 <table width="100%" class="data">
 	<tr valign="top">
 		<td width="20%" class="label">{fieldLabel name="locale" key="locale.primary"}</td>
@@ -122,6 +123,7 @@ function doSubmit() {
 	</tr>
 </table>
 </div>
+</div>
 
 <div class="separator"></div>
 
@@ -129,6 +131,7 @@ function doSubmit() {
 <div id="fileSettings">
 	<h3>{translate key="installer.fileSettings"}</h3>
 
+<div class="table-responsive">
 	<table width="100%" class="data">
 		<tr valign="top">
 			<td width="20%" class="label">{fieldLabel name="filesDir" key="installer.filesDir"}</td>
@@ -146,6 +149,7 @@ function doSubmit() {
 			</td>
 		</tr>
 	</table>
+</div>
 
 	<div class="separator"></div>
 </div>
@@ -154,6 +158,7 @@ function doSubmit() {
 <div id="security">
 <h3>{translate key="installer.securitySettings"}</h3>
 
+<div class="table-responsive">
 <table width="100%" class="data">
 	<tr valign="top">
 		<td width="20%" class="label">{fieldLabel name="encryption" key="installer.encryption"}</td>
@@ -167,6 +172,7 @@ function doSubmit() {
 	</tr>
 </table>
 </div>
+</div>
 
 <div class="separator"></div>
 
@@ -175,6 +181,7 @@ function doSubmit() {
 
 <p>{translate key="installer.administratorAccountInstructions"}</p>
 
+<div class="table-responsive">
 <table width="100%" class="data">
 	<tr valign="top">
 		<td width="20%" class="label">{fieldLabel name="adminUsername" key="user.username"}</td>
@@ -198,6 +205,7 @@ function doSubmit() {
 	</tr>
 </table>
 </div>
+</div>
 
 <div class="separator"></div>
 
@@ -206,6 +214,7 @@ function doSubmit() {
 
 <p>{translate key="installer.databaseSettingsInstructions"}</p>
 
+<div class="table-responsive">
 <table width="100%" class="data">
 	<tr valign="top">
 		<td width="20%" class="label">{fieldLabel name="databaseDriver" key="installer.databaseDriver"}</td>
@@ -247,12 +256,14 @@ function doSubmit() {
 	</tr>
 </table>
 </div>
+</div>
 
 <div class="separator"></div>
 
 <div id="oaiSettings">
 <h3>{translate key="installer.oaiSettings"}</h3>
 
+<div class="table-responsive">
 	<table width="100%" class="data">
 		<tr valign="top">
 			<td width="20%" class="label">{fieldLabel name="oaiRepositoryId" key="installer.oaiRepositoryId"}</td>
@@ -263,6 +274,7 @@ function doSubmit() {
 			</td>
 		</tr>
 	</table>
+</div>
 
 	<div class="separator"></div>
 </div>

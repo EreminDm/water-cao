@@ -65,6 +65,7 @@
 <div class="separator"></div>
 <div id="submissionEventLog">
 <h3>{translate key="submission.history.submissionEventLog"} - {translate key="submission.history.recentLogEntries"}</h3>
+<div class="table-responsive">
 <table width="100%" class="listing">
 	<tr><td class="headseparator" colspan="4">&nbsp;</td></tr>
 	<tr class="heading" valign="bottom">
@@ -102,6 +103,7 @@
 	</tr>
 {/if}
 </table>
+</div>
 
 <a href="{url op="submissionEventLog" path=$submission->getId()}" class="action">{translate key="submission.history.viewLog"}</a>{if $isEditor} |
 <a href="{url page="editor" op="clearSubmissionEventLog" path=$submission->getId()}" class="action" onclick="return confirm('{translate|escape:"jsparam" key="submission.event.confirmClearLog"}')">{translate key="submission.history.clearLog"}</a>{/if}
@@ -112,6 +114,7 @@
 <div id="submissionEmailLog">
 <h3>{translate key="submission.history.submissionEmailLog"} - {translate key="submission.history.recentLogEntries"}</h3>
 
+<div class="table-responsive">
 <table width="100%" class="listing">
 	<tr><td class="headseparator" colspan="5">&nbsp;</td></tr>
 	<tr class="heading" valign="bottom">
@@ -143,6 +146,7 @@
 	</tr>
 {/if}
 </table>
+</div>
 
 <a class="action" href="{url op="submissionEmailLog" path=$submission->getId()}">{translate key="submission.history.viewLog"}</a>{if $isEditor} |
 <a class="action" href="{url page="editor" op="clearsubmissionEmailLog" path=$submission->getId()}" onclick="return confirm('{translate|escape:"jsparam" key="submission.email.confirmClearLog"}')">{translate key="submission.history.clearLog"}</a>{/if}
@@ -153,6 +157,7 @@
 <div id="submissionNotes">
 <h3>{translate key="submission.notes"}</h3>
 
+<div class="table-responsive">
 <table width="100%" class="listing">
 	<tr><td colspan="6" class="headseparator">&nbsp;</td></tr>
 	<tr class="heading" valign="bottom">
@@ -187,6 +192,7 @@
 	</tr>
 {/if}
 </table>
+</div>
 
 <a class="action" href="{url op="submissionNotes" path=$submission->getId()}">{translate key="submission.notes.viewNotes"}</a> |
 <div style="display:inline" id="expandNotes"><a class="action" href="javascript:toggleNoteAll()">{translate key="submission.notes.expandNotes"}</a></div><div style="display: none" id="collapseNotes"><a class="action" href="javascript:toggleNoteAll()">{translate key="submission.notes.collapseNotes"}</a></div> |

@@ -17,6 +17,7 @@
 <div id="sourceSettings">
 <form method="post" action="{url op="updateAuthSource" path=$authId}">
 
+<div class="table-responsive">
 <table class="data" width="100%">
 	<tr valign="top">
 		<td width="20%" class="label">{fieldLabel name="title" key="common.title"}</td>
@@ -52,6 +53,7 @@
 		</td>
 	</tr>
 </table>
+</div>
 
 {if $pluginTemplate}{include file=$pluginTemplate}{/if}
 
